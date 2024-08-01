@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protfolio-Bhushan Gawali</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="styles.css">
+
+	<link rel="icon" href="https://img.icons8.com/?size=50&id=53428&format=png">
+
+<style>
+	
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.skill-mf .progress {
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+/* project image zoom effect */
+
+/* .zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05);
+} */
+
+.image-container {
+  display: inline-block;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.025);
+  filter: brightness(0.9);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Additional CSS for other sections */
+.zoom-effect {
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-effect img {
+  transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover img {
+  transform: scale(1.01);
+}
+
+.skill-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-icons img:hover {
+  transform: scale(1.01);
+}
+
+.counter-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-wrap .number {
+  font-size: 3em;
+  font-weight: bold;
+  color: #000;
+}
+
+.project .text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.project {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  transition: border-color 0.3s ease;
+}
+
+.project:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.project-item {
+    margin-bottom: 30px; /* Adjust the value to control spacing */
+  }
+  .project-row {
+    margin-bottom: 60px; /* Extra space between every three projects */
+  }
+
+
+</style>
+
+
+
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Bhushan Gawali</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+			  <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skill</span></a></li>
+	          <li class="nav-item"><a href="#combined-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg-1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Namaste !</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Bhushan Gawali</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst  ',
+						// 'YouTuber  ',
+						'Civil Engineer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A  Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/bhushan-gawali-97b645233/" class="btn btn-primary py-3 px-4">linkedin</a> 
+							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">Resume</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/bg_1.png);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
+		            <h2 class="mb-4">About Me</h2>
+		            <p>I am Bhushan Gawali, an aspiring data analyst with a robust foundation in Python, SQL, Excel, and Power BI. Having successfully transitioned from a career in civil engineering to data analysis, I demonstrate adaptability and a continuous learning mindset. My educational background includes a B.E. in Civil Engineering from Sandip Institute & Technology Research Centre, Nashik, where I graduated with a CGPA of 8.11.</p>
+		            <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Name:</span> <span>Bhushan Janardan Gawali</span></li>
+		            	<li class="d-flex"><span>Date of birth:</span> <span>Augast 14, 2000</span></li>
+		            	<li class="d-flex"><span>Address:</span> <span>Nashik, Maharashtra</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>+91 7743927365</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>bhushanjg14@gmail.com</span></li>
+		            	<li class="d-flex"><span>Hobbies: </span> <span>Cricket, Traveling, especially to hill stations</span></li>
+		            </ul>
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+              	<p class="mb-4">
+	                <span class="number" data-number="10">0</span>
+	                <span>+ Project complete</span>
+                </p>
+                <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+
+
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>I completed a Data Analyst course at Digikull, where I mastered MySQL, Python, Excel, and Power BI through real-world projects and professional development. As a Site Engineer at T and T Infra Pune Ltd., I managed site operations, handled client interactions, and oversaw bridge construction tasks, ensuring efficient Site execution.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">January 2024 – June 2024</span>
+						<h2>Data Analyst</h2>
+						<span class="position">Digikull</span>
+						<p class="mt-4">Completed an intensive Data Analyst course, focusing on practical skills and real-world scenarios. Gained expertise in MySQL, Python, Excel, and Power BI, along with professional and critical thinking development.
+							<ul>
+								<li>MySQL: Developed skills in database management and query optimization.</li>
+								<li>Python: Learned data manipulation, analysis, and visualization techniques.</li>
+								<li>Excel: Mastered advanced data analysis and spreadsheet functionalities.</li>
+								<li>Power BI: Created interactive dashboards and reports for data insights.</li>
+								<li>Professional Development: Enhanced problem-solving and strategic thinking abilities.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">August 2022 – April 2023</span>
+						<h2>As a Site Engineer</h2>
+						<span class="position">T and T Infra Ltd. Pune</span>
+						<p class="mt-4">Acquired valuable experience as a Site Engineer, managing site operations and client interactions. Worked on segmental bridge construction, honing skills in project management and coordination.
+							<ul>
+								<li>Conducted professional discussions and managed client site visits.</li>
+								<li>Oversaw site staff, labor, and daily tasks to ensure efficiency.</li>
+								<li>Managed segmental bridge tasks, including stressing, gluing, and grouting.</li>
+								<li>Performed detailed inspections and maintained thorough records for LG Management.</li>
+								<li>Monitored progress and ensured compliance with safety regulations and project specifications.
+								</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2022</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Savitribai Phule Pune University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016-2018</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Om Gurudev Gurukul,  Kokamthan</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+		
+	<section class="ftco-section" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+	  <div class="col-md-12 heading-section text-center ftco-animate">
+		  <h1 class="big big-2">Skills</h1>
+		<h2 class="mb-4">My Skills</h2>
+		<p>I developed strong skills in SQL, Python, Excel, and Power BI during my Data Analyst course at Digikull, alongside proficiency in Python libraries and problem-solving techniques. This training equipped me with the ability to handle complex data analysis and real-world problem-solving challenges.</p>
+	  </div>
+	</div>
+			<div class="row">
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>SQL</h3>
+						<div class="progress">
+							 <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+							  aria-valuemin="0" aria-valuemax="100" style="width:90%">
+							<span>90%</span>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Excel</h3>
+						<div class="progress">
+							 <div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+							  aria-valuemin="0" aria-valuemax="100" style="width:85%">
+							<span>85%</span>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Python</h3>
+						<div class="progress">
+							 <div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
+							  aria-valuemin="0" aria-valuemax="100" style="width:75%">
+							<span>75%</span>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Python Libraries</h3>
+						<div class="progress">
+							 <div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
+							  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+							<span>80%</span>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Power BI</h3>
+						<div class="progress">
+							 <div class="progress-bar color-5" role="progressbar" aria-valuenow="87"
+							  aria-valuemin="0" aria-valuemax="100" style="width:87%">
+							<span>87%</span>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Problem-Solving Techniques</h3>
+						<div class="progress">
+							 <div class="progress-bar color-6" role="progressbar" aria-valuenow="82"
+							  aria-valuemin="0" aria-valuemax="100" style="width:82%">
+							<span>82%</span>
+							  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+<!-- Combined Projects and Works Section -->
+
+<section class="ftco-section" id="combined-section">
+	<div class="container">
+	  <div class="row justify-content-center pb-5">
+		<div class="col-md-7 heading-section text-center ftco-animate">
+			<h1 class="big big-2">Projects</h1>
+			<h2 class="mb-4">Projects</h2>
+		  <p>Below are my projects, showcasing my skills and ability to work with multiple tools including SQL, Python, Power BI, and Excel .</p>
+		</div>
+	  </div>
+	  
+	  <!-- Projects -->
+	  <div class="row project-row mb-5">
+		<div class="col-lg-12">
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 1.html">
+				<img class="img-fluid" src="images/project-1.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong> IPL Scorecard/Points Table Dashboard <br>  <strong>Tools : </strong> Power BI, API (Rapid API) <a class="blue" href="project 1.html">details</a></p>
+		  </div>
+	
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 2.html">
+				<img class="img-fluid" src="images/project-2.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong> Bank Loan Analysis Project <br>  <strong>Tools : </strong>  Power BI, SQL <a class="blue" href="project 2.html">details</a></p>
+		  </div>
+	
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 3.html">
+				<img class="img-fluid" src="images/project-3.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong> IPL Stats Analysis <br>  <strong>Tools : </strong>  Python(Pandas, Matplotlib, Seaborn, NumPy), Jupyter Notebook <a class="blue" href="project 3.html">details</a></p>
+		  </div>
+  
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 4.html">
+				<img class="img-fluid" src="images/project-4.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong> Data Entry Form Project <br>  <strong>Tools : </strong>  Microsoft Excel (Power Query, Excel Formulas, Macros,Sheet Protection) <a class="blue" href="project 4.html">details</a></p>
+		  </div>
+		</div>
+	  </div>
+  
+	  <!-- Other More about Projects -->
+	  <div class="row project-row mb-5">
+		<div class="col-lg-4">
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 5.html">
+				<img class="img-fluid" src="images/project-5.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong> Northwind Sales Analysis <br> <strong>Tools : </strong>  MySQL, Python(Pandas, Matplotlib, Seaborn, MySQL connector) <a class="blue" href="project 5.html">  details</a></p>
+		  </div>
+		</div>
+	
+		<div class="col-lg-4">
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 6.html">
+				<img class="img-fluid" src="images/project-6.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong> Smartphone Market Insights Analysis <br>  <strong>Tools : </strong>  MySQL, Python(Pandas, Matplotlib, Seaborn, MySQL connector)<a class="blue" href="project 6.html"> details</a></p>
+		  </div>
+		</div>
+	
+		<div class="col-lg-4">
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 7.html">
+				<img class="img-fluid" src="images/project-7.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong> Retail Sale Dashboard <br> <strong>Tools : </strong>  MySQL, Power BI, Power Query <a class="blue" href="project 7.html"> details</a></p>
+		  </div>
+		</div>
+
+		<div class="col-lg-4">
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 8.html">
+				<img class="img-fluid" src="images/project-8.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong>  Sales Dashboard <br> <strong>Tools : </strong>  Excel, PowerPoint <a class="blue" href="project 8.html"> details</a></p>
+		  </div>
+		</div>
+	
+		<div class="col-lg-4">
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 9.html">
+				<img class="img-fluid" src="images/project-9.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong> Bank Loan Report Dashboard <br>  <strong>Tools : </strong>  Excel <a class="blue" href="project 9.html"> details</a></p>
+		  </div>
+		</div>
+	
+		<div class="col-lg-4">
+		  <div class="text-container project-item mb-5">
+			<div class="image-container">
+			  <a href="project 10.html">
+				<img class="img-fluid" src="images/project-10.png" alt="alternative">
+			  </a>
+			</div>
+			<p><strong>Project:</strong> YouTube Views Forecasting Project <br> <strong>Tools : </strong>  Excel <a class="blue" href="project 10.html"> details</a></p>
+		  </div>
+		</div>
+
+		<div class="col-lg-4">
+			<div class="text-container project-item mb-5">
+			  <div class="image-container">
+				<a href="project 11.html">
+				  <img class="img-fluid" src="images/project-11.jpg" alt="alternative">
+				</a>
+			  </div>
+			  <p><strong>Project:</strong> Web Scraping <br> <strong>Tools : </strong>  Python(Pandas, Request, BeautifulSoup)<a class="blue" href="project 11.html"> details</a></p>
+			</div>
+		  </div>
+
+	  </div>
+	</div>
+  </section>
+  
+
+<!-- End     -->
+
+
+
+  
+	<!-- Section -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bhushan Gawali's Portfolio</title>
+		<style>
+			.pdf-container {
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+	
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="05">0</strong><span>+</span>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="10">0</strong><span>+</span>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="1000">0</strong><span>+</span>
+							<span>Contacts</span>
+						</div>
+					</div>
+				</div>
+
+				<head>
+					<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<title>Simple View Counter</title>
+					<style>
+						.counter-wrap {
+							text-align: center;
+							margin-top: 50px;
+						}
+						.block-18 {
+							font-size: 24px;
+							font-weight: bold;
+						}
+						.number {
+							font-size: 48px;
+							color: #FF5733;
+						}
+					</style>
+				</head>
+				<body>
+					<div class="col-md d-flex justify-content-center counter-wrap">
+						<div class="block-18">
+							<div class="text">
+								<strong class="number" id="viewCount">0</strong><span>+</span>
+								<span>Views</span>
+							</div>
+						</div>
+					</div>
+				
+					<script>
+						// Function to update and fetch view count
+						function updateViewCount() {
+							const pageName = 'your_page_identifier'; // Unique identifier for each page
+							let viewCount = localStorage.getItem(pageName);
+				
+							if (viewCount === null) {
+								viewCount = 1; // First visit
+							} else {
+								viewCount = parseInt(viewCount) + 1; // Increment the count
+							}
+				
+							// Save the updated count to localStorage
+							localStorage.setItem(pageName, viewCount);
+				
+							// Display the count
+							document.getElementById('viewCount').innerText = viewCount;
+						}
+				
+						// Update the view count when the page loads
+						window.onload = updateViewCount;
+					</script>
+
+	
+	</body>
+          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I specialize in SQL, Python, Excel, and Power BI, with a focus on leveraging Python libraries and problem-solving skills. I enjoy tackling business challenges and revealing insightful data narratives. Explore my projects on GitHub for more details. </h4>
+						<br>
+						<p><a href="https://github.com/Bhushan148?tab=repositories" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Here are the details to get in touch with me :</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+				<p><a href="https://maps.app.goo.gl/TDmYkGakXReXgURE9">Nashik, Maharashtra</a></p>
+	          </div>
+          </div>
+
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box p-4 text-center">
+			  <div class="icon d-flex align-items-center justify-content-center">
+				<span class="icon-phone2"></span>
+			  </div>
+			  <h3 class="mb-4">Contact Number</h3>
+			  <p><a href="tel:7743927365">+91 7743927365</a></p>
+			</div>
+		  </div>
+
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box p-4 text-center">
+			  <div class="icon d-flex align-items-center justify-content-center">
+				<span class="icon-web"></span>
+			  </div>
+			  <h3 class="mb-4">Email Address</h3>
+			  <p><a href="mailto:bhushanjg14@gmail.com">bhushanjg14@gmail.com</a></p>
+			</div>
+		  </div>
+		  
+		  
+
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-whatsapp"></span>
+          		</div>
+          		<h3 class="mb-4">WhatsApp</h3>
+	            <p><a href="http://Wa.me/+917743927365">Link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/qF7YScvNMQSEgTpc9" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/Bhushan148"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/bhushan-gawali-97b645233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://x.com/Bhushan58619812?t=ypTn9S1wC7tqCiEE087AZg&s=08"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/bhushan.gawali.568"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate"><a href="tel:7743927365"><span class="icon-phone"></span></a></li>
+					  <li class="ftco-animate"><a href="http://Wa.me/+917743927365"><span class="icon-whatsapp"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+ 
+
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</b><b>Thank you !.. </b>   for taking the time to visit my profile and review my work. I hope my portfolio provided you with valuable insights into my skills and expertise. </a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	  
+	
+	<!-- <iframe title="IPL Project" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=05809e97-5dea-448f-a768-aa01b80f7fd9&autoAuth=true&ctid=b5e77a2d-6845-4cd5-8cc6-828b3b988bb5" frameborder="0" allowFullScreen="true"></iframe> -->
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
+
+
+
+<!--  ----------------------------------------------- ----------------------------------------------------    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
