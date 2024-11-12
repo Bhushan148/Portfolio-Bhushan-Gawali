@@ -79,7 +79,7 @@
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="https://www.linkedin.com/in/bhushan-gawali-97b645233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <a href="http://Wa.me/+917743927365">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-whatsapp fa-stack-1x"></i> 
                         </a>
@@ -218,73 +218,6 @@
 
 
 
-<!-- Review And Back Button -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Rating</title>
-    <style>
-        #star-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .star {
-            font-size: 50px;
-            cursor: pointer;
-            color: grey;
-        }
-
-        .yellow {
-            color: yellow;
-        }
-
-        .rating-circle {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
-            height: 100px;
-            border: 5px solid white;
-            border-radius: 50%;
-            background-color: black;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 20px auto;
-        }
-
-        .review-text {
-            text-align: center;
-            color: white;
-            font-weight: bold;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Reviews Section -->
-    <div class="ex-basic-1 pt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <h3 style="color: yellow; text-align: center;">Please give a review of the project</h3>
-                    <div id="star-container">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                    <div id="average-rating" class="rating-circle"><span class="smiley">&#9786;</span></div>
-                    <div class="review-text" id="review-text"></div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of reviews section -->
-
     <!-- Basic -->
     <div class="ex-basic-1 pt-3 pb-5">
         <div class="container">
@@ -297,77 +230,6 @@
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
     <!-- end of basic -->
-    
-
-    <script>
-        function initStarRating(ratingsKey) {
-            const stars = document.querySelectorAll('.star');
-            const averageRatingElement = document.getElementById('average-rating');
-            const reviewTextElement = document.getElementById('review-text');
-
-            // Retrieve ratings and review status from localStorage
-            let ratings = JSON.parse(localStorage.getItem(ratingsKey)) || [];
-            let hasReviewed = JSON.parse(localStorage.getItem(`${ratingsKey}_reviewed`)) || false;
-
-            const updateAverageRating = () => {
-                const totalReviews = ratings.length;
-                const sumRatings = ratings.reduce((acc, rating) => acc + rating, 0);
-                const averageRating = (totalReviews === 0) ? 0 : (sumRatings / totalReviews).toFixed(1);
-                averageRatingElement.textContent = averageRating;
-                reviewTextElement.textContent = `Avg rating of ${totalReviews} reviews`;
-
-                // Update stars color based on average rating
-                stars.forEach(s => {
-                    s.classList.remove('yellow');
-                    if (parseInt(s.getAttribute('data-value')) <= averageRating) {
-                        s.classList.add('yellow');
-                    }
-                });
-            };
-
-            const disableStars = () => {
-                stars.forEach(star => {
-                    star.style.cursor = 'default';
-                    star.removeEventListener('click', rateFunction); // Remove the click event listener
-                });
-            };
-
-            const rateFunction = (event) => {
-                if (hasReviewed) return;
-
-                const rating = parseInt(event.target.getAttribute('data-value'));
-                ratings.push(rating);
-                localStorage.setItem(ratingsKey, JSON.stringify(ratings));
-                localStorage.setItem(`${ratingsKey}_reviewed`, true); // Set review status to true
-                hasReviewed = true;
-                updateAverageRating();
-                disableStars();
-
-                // Highlight selected stars
-                stars.forEach(s => {
-                    s.classList.remove('yellow');
-                    if (parseInt(s.getAttribute('data-value')) <= rating) {
-                        s.classList.add('yellow');
-                    }
-                });
-            };
-
-            stars.forEach(star => {
-                star.addEventListener('click', rateFunction);
-            });
-
-            if (hasReviewed) {
-                disableStars();
-            }
-
-            updateAverageRating();
-        }
-
-        // Initialize star rating for the current page
-        document.addEventListener('DOMContentLoaded', () => {
-            initStarRating('ratingsPage5'); // Call with a unique key for each page
-        });
-    </script>
 
 
 

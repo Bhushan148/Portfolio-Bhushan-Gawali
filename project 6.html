@@ -79,7 +79,7 @@
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="https://www.linkedin.com/in/bhushan-gawali-97b645233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <a href="http://Wa.me/+917743927365">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-whatsapp fa-stack-1x"></i> 
                         </a>
@@ -132,7 +132,7 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <h5 style="color: rgb(240, 187, 12);"><b>Tools :  </b>MySQL, Python(Pandas, Matplotlib, Seaborn, MySQL connector)</h5><br>
-                    <h5 style="color: rgb(143, 216, 225);">Repository : </h5> <b>Check out the project on GitHub and access the files here  :  <a style="color: rgb(106, 221, 144);" href="https://github.com/Bhushan148/Smartphone-Market-Insights-Analysis-Project/blob/210ed6c620c10343e17599f402d333b1f1efefac/README.md" target="_blank">Smartphone Market Insights Analysis</a></b>
+                    <h5 style="color: rgb(143, 216, 225);">Repository : </h5> <b>Check out the project on GitHub and access the files here  :  <a style="color: rgb(106, 221, 144);" href="https://github.com/Bhushan148/Smartphone-Market-Insights-Analysis-Project" target="_blank">Smartphone Market Insights Analysis</a></b>
                     
                     <p class="mb-5" style="color: white;"><h5 style="color: rgb(143, 216, 225);"">Project Objective : </h5>Smartphone Market Insights Analysis" project delivers a comprehensive examination of the smartphone market using SQL and Python. The analysis spans various factors such as prices, features, user ratings, and technical specifications of different smartphone models. By leveraging a detailed dataset that includes information on each smartphone's price, battery life, camera quality, processor type, and other relevant attributes, this project aims to provide valuable insights for both consumers and manufacturers.</p>
                     <p class="mb-5" style="color: white;"><h5 style="color: rgb(143, 216, 225);">Description  : </h5>This project involves importing data into SQL, running queries to extract and manipulate the data, and then visualizing the results in Power BI dashboards. The project is divided into three main dashboards:</p>
@@ -185,13 +185,13 @@
                         <li>This project aims to provide consumers with informed purchasing decisions and help manufacturers understand market trends and consumer preferences. By analyzing the data, valuable insights such as popular price ranges, user satisfaction with different brands and processor types, and trends in display resolution and camera quality are revealed. These insights are visualized through various charts and graphs, making the information easily accessible and interpretable.</li>
                     </ul>
                     
-                    <h5 style="color: yellow;">Check out the project on GitHub :  <a style="color: rgb(223, 227, 243);" href="https://github.com/Bhushan148/Forecasting-in-Excel" target="_blank">Bank Loan Analysis Project</a></h5>
+                    <h5 style="color: yellow;">Check out the project on GitHub :  <a style="color: rgb(223, 227, 243);" href="https://github.com/Bhushan148/Smartphone-Market-Insights-Analysis-Project" target="_blank">Smartphone Market Insights Analysis</a></h5>
                   
                     </p>
                     
                     <h5 style="color: yellow;">Download Dataset Here</h5>
 
-                    <a href="https://github.com/Bhushan148/Smartphone-Market-Insights-Analysis-Project/blob/210ed6c620c10343e17599f402d333b1f1efefac/smartphone.csv" class="download-button" download>Download Dataset</a>
+                    <a href="https://github.com/Bhushan148/Smartphone-Market-Insights-Analysis-Project/blob/main/smartphone.csv" class="download-button" download>Download Dataset</a>
 
 
                 </div> <!-- end of col -->
@@ -204,71 +204,6 @@
 
 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Rating</title>
-    <style>
-        #star-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .star {
-            font-size: 50px;
-            cursor: pointer;
-            color: grey;
-        }
-
-        .yellow {
-            color: yellow;
-        }
-
-        .rating-circle {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
-            height: 100px;
-            border: 5px solid white;
-            border-radius: 50%;
-            background-color: black;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 20px auto;
-        }
-
-        .review-text {
-            text-align: center;
-            color: white;
-            font-weight: bold;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Reviews Section -->
-    <div class="ex-basic-1 pt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <h3 style="color: yellow; text-align: center;">Please give a review of the project</h3>
-                    <div id="star-container">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                    <div id="average-rating" class="rating-circle"><span class="smiley">&#9786;</span></div>
-                    <div class="review-text" id="review-text"></div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of reviews section -->
 
     <!-- Basic -->
     <div class="ex-basic-1 pt-3 pb-5">
@@ -282,78 +217,6 @@
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
     <!-- end of basic -->
-    
-
-    <script>
-        function initStarRating(ratingsKey) {
-            const stars = document.querySelectorAll('.star');
-            const averageRatingElement = document.getElementById('average-rating');
-            const reviewTextElement = document.getElementById('review-text');
-
-            // Retrieve ratings and review status from localStorage
-            let ratings = JSON.parse(localStorage.getItem(ratingsKey)) || [];
-            let hasReviewed = JSON.parse(localStorage.getItem(`${ratingsKey}_reviewed`)) || false;
-
-            const updateAverageRating = () => {
-                const totalReviews = ratings.length;
-                const sumRatings = ratings.reduce((acc, rating) => acc + rating, 0);
-                const averageRating = (totalReviews === 0) ? 0 : (sumRatings / totalReviews).toFixed(1);
-                averageRatingElement.textContent = averageRating;
-                reviewTextElement.textContent = `Avg rating of ${totalReviews} reviews`;
-
-                // Update stars color based on average rating
-                stars.forEach(s => {
-                    s.classList.remove('yellow');
-                    if (parseInt(s.getAttribute('data-value')) <= averageRating) {
-                        s.classList.add('yellow');
-                    }
-                });
-            };
-
-            const disableStars = () => {
-                stars.forEach(star => {
-                    star.style.cursor = 'default';
-                    star.removeEventListener('click', rateFunction); // Remove the click event listener
-                });
-            };
-
-            const rateFunction = (event) => {
-                if (hasReviewed) return;
-
-                const rating = parseInt(event.target.getAttribute('data-value'));
-                ratings.push(rating);
-                localStorage.setItem(ratingsKey, JSON.stringify(ratings));
-                localStorage.setItem(`${ratingsKey}_reviewed`, true); // Set review status to true
-                hasReviewed = true;
-                updateAverageRating();
-                disableStars();
-
-                // Highlight selected stars
-                stars.forEach(s => {
-                    s.classList.remove('yellow');
-                    if (parseInt(s.getAttribute('data-value')) <= rating) {
-                        s.classList.add('yellow');
-                    }
-                });
-            };
-
-            stars.forEach(star => {
-                star.addEventListener('click', rateFunction);
-            });
-
-            if (hasReviewed) {
-                disableStars();
-            }
-
-            updateAverageRating();
-        }
-
-        // Initialize star rating for the current page
-        document.addEventListener('DOMContentLoaded', () => {
-            initStarRating('ratingsPage6'); // Call with a unique key for each page
-        });
-    </script>
-
 
 
 

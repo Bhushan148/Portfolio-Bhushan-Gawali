@@ -23,10 +23,168 @@
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="styles.css">
 
-	<link rel="icon" href="https://img.icons8.com/?size=50&id=53428&format=png">
+<!-- <link rel="icon" href="https://i.ibb.co/1s36DLT/your-image.png" type="image/png"> -->
+
+<link rel="icon" href="https://i.ibb.co/dtHy9bG/your-image.png" type="image/png">
 
 <style>
-	
+	.light-gray-text {
+    color: lightgray;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+
+ /* Keeps border tight around the text */
+}
+
+
+
+/* Adjust margin for the LinkedIn and Resume buttons */
+.btn-linkedin, .btn-resume {
+    margin-bottom: 15px; /* Adjust this value to increase/decrease the gap */
+}
+
+/* Style for icon buttons */
+.btn-icon {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin: 5px; /* Adds spacing between each icon */
+}
+
+/* Optional: Adjust icon button margin for better spacing */
+.btn-icon:not(:last-child) {
+    margin-right: 10px; /* Adjust this value for space between icons */
+}
+
+
+
+/* Container styling */
+.btn-container {
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+  align-items: center;
+}
+
+/* LinkedIn button styling */
+.btn-linkedin {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-linkedin:hover {
+  background-color: rgb(255, 200, 0);
+  color: black;
+  border-color: rgb(255, 200, 0);
+}
+
+/* Resume button styling */
+.btn-resume {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-resume:hover {
+  background-color: rgb(255, 200, 0);
+  color: black;
+  border-color: rgb(255, 200, 0);
+}
+
+/* Icon button styling for Gmail, WhatsApp, and GitHub */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+.btn-icon:hover {
+  background-color: rgb(255, 200, 0);
+  color: black;
+  border-color: rgb(255, 200, 0);
+}
+
+
+	/* -------------------- */
+
+
+/* Remove horizontal scrolling */
+body, html {
+  overflow-x: hidden;
+}
+
+
+
+/* Project Title Hover Effect */
+.project-title a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-title a:hover {
+  color: rgb(255, 200, 0); /* Yellow color on hover */
+}
+
+/* Tools Text Style */
+.tools {
+  color: rgb(255, 200, 0); /* Yellow color */
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* View Project Button */
+.view-project-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.view-project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.view-project-btn:hover {
+  background-color: rgb(255, 200, 0); /* Yellow color on hover */
+  color: black;
+}
+
+
 /*======================================
 //--//-->   ABOUT
 ======================================*/
@@ -185,687 +343,2099 @@
     margin-bottom: 60px; /* Extra space between every three projects */
   }
 
+        /* For larger screens (PC) - Full opacity */
+        @media (min-width: 768px) {
+            .hero .home-slider .slider-item .img {
+                background-image: url('images/bg-1.png');
+                opacity: 1; /* No opacity change on PC */
+            }
+        }
+
+        /* For smaller screens (Mobile) - Lightened background */
+        @media (max-width: 767px) {
+            .hero .home-slider .slider-item .img {
+                background-image: url('images/bg-1.png');
+                opacity: 0.5; /* Reduced opacity for mobile (10-20%) */
+            }
+        }
+
+/* Styling the navbar brand */
+.navbar-brand {
+    font-size: 1.8rem; /* Slightly larger font */
+    font-weight: 600; /* Semi-bold for better readability */
+    color: #FFD700; /* Yellow color */
+    font-family: 'Pacifico', cursive, sans-serif; /* Fancy cursive font with fallbacks */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    letter-spacing: 1px; /* Subtle spacing for readability */
+}
+
+/* Hover effect */
+.navbar-brand:hover {
+    color: #FFA500; /* Orange shade on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    text-shadow: 0px 0px 8px rgba(255, 165, 0, 0.7); /* Soft glow on hover */
+}
+
+/* Mobile-specific enhancements */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        color: #FFD700; /* Keep yellow color on mobile */
+        text-shadow: 0px 0px 6px rgba(255, 215, 0, 0.5); /* Soft glow on small screens */
+    }
+}
+
+
+/* Navbar and Menu Icon Styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #333; /* Dark background for contrast */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.oi-menu, .oi-close {
+    font-size: 1.8rem;
+    color: #FFD700; /* Yellow color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Menu Icon Hover and Opened State */
+.navbar-toggler .oi-menu,
+.navbar-toggler.active .oi-close {
+    position: relative;
+    cursor: pointer;
+    color: #FFA500;
+}
+
+/* Adding hover effect for a fancy feel */
+.navbar-toggler:hover .oi-menu, 
+.navbar-toggler.active:hover .oi-close {
+    color: #ffeb3b; /* Brighter yellow */
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Smooth Icon Transition */
+.oi-menu,
+.oi-close {
+    display: inline-block;
+    transform-origin: center;
+    transition: opacity 0.3s, transform 0.3s ease-in-out;
+}
+
+.navbar-toggler.active .oi-menu {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+.navbar-toggler.active .oi-close {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+/* Hide close icon by default, show only when menu is active */
+.oi-close {
+    display: inline-block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+    /* Remove extra spacing between navbar and home section */
+    #home-section {
+        padding-top: 0; /* Remove top padding */
+        margin-top: -20px; /* Adjust this value as needed to reduce space */
+    }
 
 </style>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.querySelector('.navbar-toggler');
+    const menuIcon = menuButton.querySelector('.oi-menu');
+    const closeIcon = document.createElement('span'); // Close icon element
 
+    // Add close icon to button
+    closeIcon.classList.add('oi', 'oi-close');
+    menuButton.appendChild(closeIcon);
 
+    menuButton.addEventListener('click', function () {
+        menuButton.classList.toggle('active'); // Toggle active state
+    });
 
+    // Ensure visibility of the navbar on scroll for mobile
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            menuButton.style.opacity = "1";
+            menuButton.style.transition = "opacity 0.3s ease";
+        } else {
+            menuButton.style.opacity = "0.9";
+        }
+    });
+});
+
+</script>
 
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
-	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Bhushan Gawali</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-			  <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skill</span></a></li>
-	          <li class="nav-item"><a href="#combined-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg-1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Namaste !</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Bhushan Gawali</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Analyst  ',
-						// 'YouTuber  ',
-						'Civil Engineer   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>A  Data Analyst</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/bhushan-gawali-97b645233/" class="btn btn-primary py-3 px-4">linkedin</a> 
-							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">Resume</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex">
-    			<div class="col-md-6 col-lg-5 d-flex">
-    				<div class="img-about img d-flex align-items-stretch">
-    					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/bg_1.png);">
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">About</h1>
-		            <h2 class="mb-4">About Me</h2>
-		            <p>I am Bhushan Gawali, an aspiring data analyst with a robust foundation in Python, SQL, Excel, and Power BI. Having successfully transitioned from a career in civil engineering to data analysis, I demonstrate adaptability and a continuous learning mindset. My educational background includes a B.E. in Civil Engineering from Sandip Institute & Technology Research Centre, Nashik, where I graduated with a CGPA of 8.11.</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span>Bhushan Janardan Gawali</span></li>
-		            	<li class="d-flex"><span>Date of birth:</span> <span>Augast 14, 2000</span></li>
-		            	<li class="d-flex"><span>Address:</span> <span>Nashik, Maharashtra</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>+91 7743927365</span></li>
-		            	<li class="d-flex"><span>Email:</span> <span>bhushanjg14@gmail.com</span></li>
-		            	<li class="d-flex"><span>Hobbies: </span> <span>Cricket, Traveling, especially to hill stations</span></li>
-		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-              	<p class="mb-4">
-	                <span class="number" data-number="10">0</span>
-	                <span>+ Project complete</span>
-                </p>
-                <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
-              </div>
-	          </div>
-	        </div>
+        <div class="container">
+            <!-- Portfolio Brand with Icon -->
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-briefcase"></i> Portfolio
+            </a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu" id="navbar-toggler-icon"></span> 
+            </button>
+    
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+                    <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Certification</span></a></li>
+                    <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
         </div>
-    	</div>
-    </section>
+    </nav>
+
+    <style>
+.nav-link {
+    font-weight: bold; /* Make text bold */
+}
+
+/* Navbar Styling */
+#ftco-navbar .navbar-brand {
+    font-family: 'Roboto', sans-serif; /* Use a professional font */
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f8f8f8; /* Light text color */
+    display: flex;
+    align-items: center;
+}
+
+/* Portfolio Icon Styling */
+#ftco-navbar .navbar-brand i {
+    margin-right: 10px; /* Spacing between icon and text */
+    font-size: 30px; /* Adjust size of portfolio icon */
+    color: #f2c800; /* Yellow color for the icon */
+}
+
+/* Hover Effect on Navbar Brand */
+#ftco-navbar .navbar-brand:hover {
+    color: #FFD700;
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Adjust navbar link colors */
+#ftco-navbar .navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#ftco-navbar .navbar-nav .nav-link:hover {
+    color: #f2c800; /* Hover color for nav items */
+}
+
+/* Change navbar background on scroll */
+#ftco-navbar {
+    background-color: #333333;
+}
+
+    </style>
+
+<!-- Optional: Smooth scrolling effect for anchor links -->
+<script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSection = document.querySelector(this.getAttribute('href'));
+
+            // Scroll to the section
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+
+            // Close the mobile menu when a link is clicked (on small screens)
+            if ($(".navbar-collapse").hasClass("show")) {
+                $(".navbar-collapse").collapse('hide');
+            }
+        });
+    });
+
+    // Script to toggle hamburger to cross icon
+    $(document).ready(function() {
+        $('.navbar-toggler').on('click', function() {
+            $('#navbar-toggler-icon').toggleClass('oi-menu oi-x');
+        });
+    });
+</script>
+
+<!-- Optional: Script for handling navigation menu toggle on small screens -->
+<script>
+    // Close the mobile menu after clicking a link on small screens
+    $(document).ready(function() {
+        $('.navbar-nav a').on('click', function() {
+            if ($(".navbar-collapse").hasClass("show")) {
+                $(".navbar-collapse").collapse('hide');
+            }
+        });
+    });
+</script>
 
 
+<!-- Optional: Script for handling navigation menu toggle on small screens -->
+<script>
+    // Close the mobile menu after clicking a link on small screens
+    $(document).ready(function() {
+        $('.navbar-nav a').on('click', function() {
+            if ($(".navbar-collapse").hasClass("show")) {
+                $(".navbar-collapse").collapse('hide');
+            }
+        });
+    });
+</script>
+
+<section id="home-section" class="hero">
+    <div class="container">
+        <div class="row content-wrapper">
+            <!-- Left Side: Introductory Text Centered Vertically -->
+            <div class="col-lg-5 text-section">
+                <span class="greeting">Hello,</span>
+                <h1 class="mt-3">I'm <span>Bhushan Gawali</span></h1>
+                <span id="typing-animation" class="typing-text"></span>
+
+                <script>
+                    // Typing Animation with a 10-second gap and improved design
+                    const typingAnimationElement = document.getElementById('typing-animation');
+                    const typingTexts = ['Data Analyst', 'BI Analyst', 'SQL Developer', 'Power BI Developer'];
+
+                    function playTypingAnimation() {
+                        let textIndex = 0;
+
+                        function typeText(text) {
+                            typingAnimationElement.textContent = '';
+                            let i = 0;
+                            const typingInterval = setInterval(() => {
+                                typingAnimationElement.textContent += text[i];
+                                i++;
+                                if (i === text.length) {
+                                    clearInterval(typingInterval);
+                                    setTimeout(() => {
+                                        typingAnimationElement.textContent = '';
+                                        textIndex = (textIndex + 1) % typingTexts.length;
+                                        typeText(typingTexts[textIndex]);
+                                    }, 10000); // 10 seconds gap before switching text
+                                }
+                            }, 100); // Adjust typing speed
+                        }
+                        typeText(typingTexts[textIndex]);
+                    }
+                    playTypingAnimation();
+                </script>
 
 
+                <div class="buttons mt-4">
+                    <a href="https://www.linkedin.com/in/bhushangawali148/" class="btn btn-linkedin">LinkedIn</a>
+                    <a href="https://drive.google.com/file/d/17ATzTY4LElw9X_RtAZ002EhXUpJ8Tlua/view" class="btn btn-resume">Resume</a>
+                </div>
+            </div>
+
+            <!-- Right Side: Profile Image and Icons Centered -->
+            <div class="col-lg-5 profile-section">
+                <div class="profile-image-container">
+                    <img src="images/Logo 1.jpg" alt="Profile Picture" class="profile-image">
+                </div>
+                <div class="social-icons mt-3">
+                    <a href="mailto:bhushanjg14@gmail.com" class="btn-icon"><i class="icon-envelope"></i></a>
+                    <a href="http://Wa.me/+917743927365" class="btn-icon"><i class="icon-whatsapp"></i></a>
+                    <a href="https://github.com/Bhushan148" class="btn-icon"><i class="icon-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS Styling -->
+<style>
+/* Section and Container Styling - Targeting Only Home Section */
+#home-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; /* Dark background */
+    color: #f0f0f0;
+    padding: 20px 0;
+}
+
+/* Adjusting container to keep elements in center */
+#home-section .container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center; /* Ensure the container is centered */
+}
+
+/* Content Wrapping for Balanced Layout */
+#home-section .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensure the content is centered */
+    gap: 60px;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap; /* This will make the layout stack properly on smaller screens */
+}
+
+/* Text Section Styling */
+#home-section .text-section {
+    text-align: center;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Greeting and Name Styling */
+#home-section .greeting {
+    color: #ffffff; /* White color */
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#home-section h1 {
+    color: #ffffff; /* White color */
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+#home-section h1 span {
+    color: #FFD700;
+}
+
+#home-section .typing-text {
+    color: #ffffff; /* White color */
+    font-size: 24px;
+    font-style: italic;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 1s ease;
+}
+
+/* Profile Section Styling */
+#home-section .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+}
+
+#home-section .profile-image-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #f2c800;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+#home-section .profile-image-container:hover {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+#home-section .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Buttons Styling */
+#home-section .buttons .btn {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 12px 28px;
+    color: #121212;
+    background-color: #f2c800;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#home-section .buttons .btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px); /* Elevation effect */
+}
+
+/* Social Icons Styling - Dark Background with White Icons */
+#home-section .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+#home-section .social-icons a {
+    color: #ffffff;
+    font-size: 22px;
+    padding: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: 2px solid #f2c800; /* Border for a defined look */
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+#home-section .social-icons a:hover {
+    color: #121212;
+    background-color: #f2c800;
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #home-section {
+        padding: 20px;
+    }
+
+    #home-section .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    #home-section h1 {
+        font-size: 42px;
+    }
+
+    #home-section .profile-image-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    #home-section .social-icons a {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    /* Ensures everything is aligned properly in small screens */
+    #home-section .container {
+        justify-content: center; /* Center the content */
+    }
+}
+
+</style>
 
 
+<section class="skills-section" id="about-section">
+    <div class="container">
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <p class="light-gray-text">Get To Know More</p>
+                <h1 class="big big-2">About Me</h1>
+                <h2 class="mb-4">Who Am I?</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-12 about-card">
+                <div class="about-content">
+                    <p class="about-text"> &emsp; I am a passionate Data Analyst with a flair for translating complex datasets into actionable insights. I specialize in statistical analysis, data visualization, and problem-solving, using tools like Python, SQL, Power BI, and Excel. Over the past years, I have successfully completed over 15 projects across various industries, including banking, sports, and e-commerce, delivering meaningful results.</p>
+                    <p class="about-text"> &emsp; With a Data Analytics certification from Digikull and a Bachelor's degree in Civil Engineering, I bring a unique blend of technical expertise and innovative thinking to my work. I constantly seek to sharpen my skills through platforms like LeetCode, DataLemur, and HackerRank, where I solve real-world problems and stay ahead of emerging trends in data science.</p>
+                    <p class="about-text"> &emsp; Outside of my professional work, I enjoy exploring consumer behavior patterns, analyzing market trends, and embracing new technologies. When I’m not immersed in data, you’ll find me enjoying a game of cricket or traveling to serene hill stations to recharge and find new perspectives.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <style>
+        /* About Section Style */
+        .about-section {
+            background: linear-gradient(135deg, #2f2f2f, #000);
+            padding: 80px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Title and Subtitle Styling */
+        .about-section h1, .about-section h2 {
+            color: #f2c800;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section p.light-gray-text {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        /* About Card Styling */
+        .about-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            border: 2px solid #f2c800;
+            animation: slideInUp 1s ease-out;
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        /* About Text Styling */
+        .about-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #fff;
+            font-weight: 400;
+            text-align: justify;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+            padding-top: 20px;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out forwards;
+        }
+
+        .about-text:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+
+        .about-text:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+
+        .about-text:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+
+        .about-text:hover {
+            color: #f2c800;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 60px 20px;
+            }
+
+            .about-card {
+                padding: 25px;
+            }
+
+            .about-section h1, .about-section h2 {
+                font-size: 28px;
+            }
+
+            .about-text {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .about-card {
+                border-radius: 10px;
+            }
+
+            .about-content {
+                text-align: center;
+            }
+        }
+    </style>
+			
+	<br>
+			<div class="roadmap-section text-center">
 	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>I completed a Data Analyst course at Digikull, where I mastered MySQL, Python, Excel, and Power BI through real-world projects and professional development. As a Site Engineer at T and T Infra Pune Ltd., I managed site operations, handled client interactions, and oversaw bridge construction tasks, ensuring efficient Site execution.</p>
-          </div>
-        </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">January 2024 – June 2024</span>
-						<h2>Data Analyst</h2>
-						<span class="position">Digikull</span>
-						<p class="mt-4">Completed an intensive Data Analyst course, focusing on practical skills and real-world scenarios. Gained expertise in MySQL, Python, Excel, and Power BI, along with professional and critical thinking development.
-							<ul>
-								<li>MySQL: Developed skills in database management and query optimization.</li>
-								<li>Python: Learned data manipulation, analysis, and visualization techniques.</li>
-								<li>Excel: Mastered advanced data analysis and spreadsheet functionalities.</li>
-								<li>Power BI: Created interactive dashboards and reports for data insights.</li>
-								<li>Professional Development: Enhanced problem-solving and strategic thinking abilities.</li>
-							</ul>
-						</p>
+				<h2 class="yellow-heading">Experience</h2>
+				<div class="roadmap">
+                    <div class="roadmap-item">
+						<span class="date">Oct 2024 – Present</span>
+						<h3>Data Analyst Intern</h3>
+						<span class="institution">Cognifyz Technologies</span>
 					</div>
-
+                    <div class="roadmap-item">
+						<span class="date">Sep 2024 – Oct 2024</span>
+						<h3>Data Analyst Intern</h3>
+						<span class="institution">Mentorness</span>
+					</div>
+					<div class="roadmap-item">
+						<span class="date">Jan 2024 – Jul 2024</span>
+						<h3>Completed Data Analytics Coursework</h3>
+						<span class="institution">Digikull</span>
+					</div>
+					<div class="roadmap-item">
+						<span class="date">Aug 2022 – Apr 2023</span>
+						<h3>Site Engineer</h3>
+						<span class="institution">T and T Infra Ltd. Pune</span>
+					</div>
 				</div>
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">August 2022 – April 2023</span>
-						<h2>As a Site Engineer</h2>
-						<span class="position">T and T Infra Ltd. Pune</span>
-						<p class="mt-4">Acquired valuable experience as a Site Engineer, managing site operations and client interactions. Worked on segmental bridge construction, honing skills in project management and coordination.
-							<ul>
-								<li>Conducted professional discussions and managed client site visits.</li>
-								<li>Oversaw site staff, labor, and daily tasks to ensure efficiency.</li>
-								<li>Managed segmental bridge tasks, including stressing, gluing, and grouting.</li>
-								<li>Performed detailed inspections and maintained thorough records for LG Management.</li>
-								<li>Monitored progress and ensured compliance with safety regulations and project specifications.
-								</li>
-							</ul>
-						</p>
+                <h2 class="yellow-heading">Education</h2>
+				<div class="roadmap">
+					<div class="roadmap-item">
+						<span class="date">2018 - 2022</span>
+						<h3>Bachelor of Engineering</h3>
+						<span class="institution">Sandip Institute of Technology and Research Centre, Nashik</span>
+						<p>Grade: First Class Distinction</p>
 					</div>
+					<div class="roadmap-item">
+						<span class="date">2016 - 2018</span>
+						<h3>Higher Secondary School</h3>
+						<span class="institution">K. K. Wagh College, Pimpalgaon (Baswant)</span>
+						<p>Grade: First Class Distinction</p>
+					</div>
+				</div>
+                
+			</div>
+	
+			<div class="text-center mt-5">
+				<a href="https://drive.google.com/file/d/17ATzTY4LElw9X_RtAZ002EhXUpJ8Tlua/view" class="btn btn-primary py-3 px-5">Download CV</a>
+			</div>
+		</div>
+	</section>
+	
+	<style>
+		h3 {
+			font-weight: bold; /* Makes the text bold */
+			color: #E0E0E0; /* Dark white color */
+			font-family: 'Poppins', Arial, sans-serif; /* Fancy font */
+			font-size: 1.5rem; /* Adjusts the size for emphasis */
+			letter-spacing: 0.5px; /* Adds slight spacing between letters */
+		}
+		.ftco-about {
+			padding: 60px 0;
+			background: linear-gradient(135deg, #000000, #000000); /* Gradient background */
+			color: #fff; /* White text color */
+		}
+		.yellow-heading {
+			color: #FFC107; /* Yellow color for headings */
+			margin-top: 40px;
+			margin-bottom: 20px;
+			font-size: 2rem;
+			font-family: 'Poppins', Arial, sans-serif;
+			font-weight: 700; /* Bold font weight */
+			text-transform: uppercase;
+			position: relative;
+			letter-spacing: 1.5px; /* Adds some spacing between letters for a fancier look */
+			text-shadow: 0 0 8px rgba(255, 193, 7, 0.7), 0 0 15px rgba(255, 193, 7, 0.5); /* Yellow glow effect */
+		}
 
+		.yellow-heading::after {
+			content: '';
+			display: block;
+			width: 100px;
+			height: 3px;
+			background-color: #FFC107;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+		.roadmap {
+			display: flex;
+			flex-direction: column;
+			align-items: center; /* Center the roadmap items */
+			margin-bottom: 30px;
+		}
+		.roadmap-item {
+			background: linear-gradient(135deg, #2a1818, #00151c);
+			border-radius: 15px; /* Rounded corners */
+			padding: 20px;
+			margin-bottom: 20px;
+			width: 60%;
+			position: relative;
+			overflow: hidden;
+			transform: scale(1);
+			transition: all 0.4s ease;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+		}
+		.roadmap-item:hover {
+			transform: scale(1.05); /* Scale on hover */
+			box-shadow: 0 10px 40px rgba(157, 157, 157, 0.6); /* Glow effect */
+		}
+		.roadmap-item:before {
+			content: '';
+			position: absolute;
+			top: -50px;
+			left: -50px;
+			width: 100px;
+			height: 100px;
+			background: #FFC107; /* Yellow color for fancy background */
+			border-radius: 50%; /* Circular shape */
+			opacity: 0.2;
+			transition: 0.4s;
+		}
+		.roadmap-item:hover:before {
+			top: -30px;
+			left: -30px;
+			opacity: 0.5;
+		}
+		.date {
+			font-weight: bold;
+			color: #d1ac3d; /* Yellow color for dates */
+			font-size: 0.9rem;
+		}
+		.institution {
+    font-weight: 700; /* Bold text */
+    color: #f0e620; /* Deep blue color for contrast on black */
+    display: block;
+    margin-top: 8px;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', Arial, sans-serif; /* Modern, stylish font */
+    text-transform: uppercase; /* Uppercase letters for emphasis */
+    letter-spacing: 0.8px; /* Adds spacing between letters */
+    position: relative;
+    padding-left: 15px; /* Adds space for decorative line */
+}
+
+/* Decorative line styling */
+.institution:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px; /* Thickness of the line */
+    height: 100%;
+    background-color: #f0e620; /* Matches the blue text color */
+    border-radius: 3px; /* Rounded edges */
+}
+
+		.btn-primary {
+			background-color: #FFC107; /* Yellow button background */
+			border-color: #FFC107; /* Button border color */
+			box-shadow: 0 4px 20px rgba(255, 193, 7, 0.5); /* Glow effect */
+		}
+		.btn-primary:hover {
+			background-color: #e0a800; /* Darker yellow on hover */
+			border-color: #e0a800; /* Darker yellow border on hover */
+			box-shadow: 0 6px 25px rgba(255, 193, 7, 0.7); /* Larger glow effect on hover */
+		}
+	
+		/* Responsive Styles */
+		@media (max-width: 768px) {
+			.roadmap-item {
+				width: 90%; /* Full width on small screens */
+				padding: 15px; /* Adjust padding for mobile */
+			}
+			.yellow-heading {
+				font-size: 1.5rem; /* Adjust heading size for smaller screens */
+			}
+			.ftco-about {
+				padding: 30px 0; /* Adjust padding for smaller screens */
+			}
+		}
+	
+		@media (max-width: 576px) {
+			.roadmap-item {
+				width: 95%; /* Slightly wider on extra small screens */
+			}
+			.date {
+				font-size: 0.8rem; /* Smaller date text on extra small screens */
+			}
+			.institution {
+				font-size: 0.9rem; /* Smaller institution text on extra small screens */
+			}
+		}
+	</style>
+	
+	
+	<br><br>
+	
+	<section class="skills-section" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<p class="light-gray-text">Explore My</p>
+					<h1 class="big big-2">Skills</h1>
+					<h2 class="mb-4">Skills</h2>
+					<p>I possess a strong foundation in data analysis, visualization, and programming, with expertise in tools such as SQL, Python, Power BI, and Excel. My skills enable me to extract insights, solve problems, and drive data-driven decisions effectively.</p>
 				</div>
 			</div>
 
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2018-2022</span>
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">Savitribai Phule Pune University</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2016-2018</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">Om Gurudev Gurukul,  Kokamthan</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-   
-
-		
-	<section class="ftco-section" id="skills-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-	  <div class="col-md-12 heading-section text-center ftco-animate">
-		  <h1 class="big big-2">Skills</h1>
-		<h2 class="mb-4">My Skills</h2>
-		<p>I developed strong skills in SQL, Python, Excel, and Power BI during my Data Analyst course at Digikull, alongside proficiency in Python libraries and problem-solving techniques. This training equipped me with the ability to handle complex data analysis and real-world problem-solving challenges.</p>
-	  </div>
-	</div>
-			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>SQL</h3>
-						<div class="progress">
-							 <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-							  aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							<span>90%</span>
-							  </div>
+			<div class="container">
+				<!-- Data Analyst Skills Section -->
+				<div class="skills-container">
+	
+					<!-- Data Analysis Skills -->
+					<div class="skill-category">
+						<h2 class="main-skill">Data Analysis Skills</h2>
+						<div class="skills">
+							<div class="skill-box">Data Analysis</div>
+							<div class="skill-box">EDA</div>
+							<div class="skill-box">Data Cleaning</div>
+							<div class="skill-box">Data Transformation</div>
+							<div class="skill-box">Data Mining</div>
+							<div class="skill-box">Statistical Analysis</div>
+							<div class="skill-box">Outlier Detection</div>
+							<div class="skill-box">Reporting</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Excel</h3>
-						<div class="progress">
-							 <div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-							  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							<span>85%</span>
-							  </div>
+	
+					<!-- Data Visualization Skills -->
+					<div class="skill-category">
+						<h2 class="main-skill">Data Visualization</h2>
+						<div class="skills">
+							<div class="skill-box">Dashboard Creation</div>
+							<div class="skill-box">Interactive Visuals</div>
+							<div class="skill-box">Data Storytelling</div>
+							<div class="skill-box">MIS Reporting</div>
+							<div class="skill-box">Advanced Charting</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Python</h3>
-						<div class="progress">
-							 <div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
-							  aria-valuemin="0" aria-valuemax="100" style="width:75%">
-							<span>75%</span>
-							  </div>
+	
+					<!-- Power BI Skills -->
+					<div class="skill-category">
+						<h2 class="main-skill">Power BI</h2>
+						<div class="skills">
+							<div class="skill-box">Data Visualization</div>
+							<div class="skill-box">Data Modeling</div>
+							<div class="skill-box">DAX</div>
+							<div class="skill-box">Dashboard Creation</div>
+							<div class="skill-box">Power Query</div>
+							<div class="skill-box">KPI Development</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Python Libraries</h3>
-						<div class="progress">
-							 <div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
-							  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							<span>80%</span>
-							  </div>
+	
+					<!-- SQL Skills -->
+					<div class="skill-category">
+						<h2 class="main-skill">SQL</h2>
+						<div class="skills">
+							<div class="skill-box">Query Optimization</div>
+							<div class="skill-box">Data Warehousing</div>
+							<div class="skill-box">Database Design</div>
+							<div class="skill-box">Stored Procedures</div>
+							<div class="skill-box">MySQL</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Power BI</h3>
-						<div class="progress">
-							 <div class="progress-bar color-5" role="progressbar" aria-valuenow="87"
-							  aria-valuemin="0" aria-valuemax="100" style="width:87%">
-							<span>87%</span>
-							  </div>
+	
+					<!-- Excel & Google Sheets Skills -->
+					<div class="skill-category">
+						<h2 class="main-skill">Excel & Google Sheets</h2>
+						<div class="skills">
+							<div class="skill-box">Advanced Formulas</div>
+							<div class="skill-box">Pivot Tables</div>
+							<div class="skill-box">VLOOKUP</div>
+							<div class="skill-box">Data Cleaning</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Problem-Solving Techniques</h3>
-						<div class="progress">
-							 <div class="progress-bar color-6" role="progressbar" aria-valuenow="82"
-							  aria-valuemin="0" aria-valuemax="100" style="width:82%">
-							<span>82%</span>
-							  </div>
+	
+					<!-- Python Skills -->
+					<div class="skill-category">
+						<h2 class="main-skill">Python Libraries</h2>
+						<div class="skills">
+							<div class="skill-box">Pandas</div>
+							<div class="skill-box">NumPy</div>
+							<div class="skill-box">Seaborn</div>
+							<div class="skill-box">Matplotlib</div>
 						</div>
 					</div>
+	
+					<!-- Additional Skills -->
+					<div class="skill-category">
+						<h2 class="main-skill">Additional Skills</h2>
+						<div class="skills">
+							<div class="skill-box">Problem-Solving</div>
+							<div class="skill-box">Attention to Detail</div>
+							<div class="skill-box">Time Management</div>
+							<div class="skill-box">Collaboration</div>
+						</div>
+					</div>
+	
 				</div>
 			</div>
 		</div>
 	</section>
-
-
-
-<!-- Combined Projects and Works Section -->
-
-<section class="ftco-section" id="combined-section">
-	<div class="container">
-	  <div class="row justify-content-center pb-5">
-		<div class="col-md-7 heading-section text-center ftco-animate">
-			<h1 class="big big-2">Projects</h1>
-			<h2 class="mb-4">Projects</h2>
-		  <p>Below are my projects, showcasing my skills and ability to work with multiple tools including SQL, Python, Power BI, and Excel .</p>
-		</div>
-	  </div>
-	  
-	  <!-- Projects -->
-	  <div class="row project-row mb-5">
-		<div class="col-lg-12">
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 1.html">
-				<img class="img-fluid" src="images/project-1.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong> IPL Scorecard/Points Table Dashboard <br>  <strong>Tools : </strong> Power BI, API (Rapid API) <a class="blue" href="project 1.html">details</a></p>
-		  </div>
 	
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 2.html">
-				<img class="img-fluid" src="images/project-2.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong> Bank Loan Analysis Project <br>  <strong>Tools : </strong>  Power BI, SQL <a class="blue" href="project 2.html">details</a></p>
-		  </div>
+	<!-- CSS for styling -->
+	<style>
+		.skills-section {
+			padding: 20px;
+			text-align: center;
+			color: white;
+		}
 	
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 3.html">
-				<img class="img-fluid" src="images/project-3.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong> IPL Stats Analysis <br>  <strong>Tools : </strong>  Python(Pandas, Matplotlib, Seaborn, NumPy), Jupyter Notebook <a class="blue" href="project 3.html">details</a></p>
-		  </div>
-  
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 4.html">
-				<img class="img-fluid" src="images/project-4.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong> Data Entry Form Project <br>  <strong>Tools : </strong>  Microsoft Excel (Power Query, Excel Formulas, Macros,Sheet Protection) <a class="blue" href="project 4.html">details</a></p>
-		  </div>
-		</div>
-	  </div>
-  
-	  <!-- Other More about Projects -->
-	  <div class="row project-row mb-5">
-		<div class="col-lg-4">
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 5.html">
-				<img class="img-fluid" src="images/project-5.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong> Northwind Sales Analysis <br> <strong>Tools : </strong>  MySQL, Python(Pandas, Matplotlib, Seaborn, MySQL connector) <a class="blue" href="project 5.html">  details</a></p>
-		  </div>
-		</div>
+		.main-skill {
+			color: #FFC107;
+			font-size: 1.5em;
+			font-weight: bold;
+			margin-bottom: 15px;
+			letter-spacing: 1.2px;
+			text-shadow: 1px 1px 5px rgba(255, 193, 7, 0.6);
+		}
 	
-		<div class="col-lg-4">
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 6.html">
-				<img class="img-fluid" src="images/project-6.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong> Smartphone Market Insights Analysis <br>  <strong>Tools : </strong>  MySQL, Python(Pandas, Matplotlib, Seaborn, MySQL connector)<a class="blue" href="project 6.html"> details</a></p>
-		  </div>
-		</div>
+		.main-skill::after {
+			content: '';
+			display: block;
+			width: 40px;
+			height: 4px;
+			background-color: #FFC107;
+			margin: 10px auto 0;
+			border-radius: 2px;
+		}
 	
-		<div class="col-lg-4">
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 7.html">
-				<img class="img-fluid" src="images/project-7.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong> Retail Sale Dashboard <br> <strong>Tools : </strong>  MySQL, Power BI, Power Query <a class="blue" href="project 7.html"> details</a></p>
-		  </div>
-		</div>
-
-		<div class="col-lg-4">
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 8.html">
-				<img class="img-fluid" src="images/project-8.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong>  Sales Dashboard <br> <strong>Tools : </strong>  Excel, PowerPoint <a class="blue" href="project 8.html"> details</a></p>
-		  </div>
-		</div>
+		.skill-category {
+			margin-bottom: 30px;
+		}
 	
-		<div class="col-lg-4">
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 9.html">
-				<img class="img-fluid" src="images/project-9.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong> Bank Loan Report Dashboard <br>  <strong>Tools : </strong>  Excel <a class="blue" href="project 9.html"> details</a></p>
-		  </div>
-		</div>
+		.skills {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			justify-content: center;
+			padding: 10px;
+		}
 	
-		<div class="col-lg-4">
-		  <div class="text-container project-item mb-5">
-			<div class="image-container">
-			  <a href="project 10.html">
-				<img class="img-fluid" src="images/project-10.png" alt="alternative">
-			  </a>
-			</div>
-			<p><strong>Project:</strong> YouTube Views Forecasting Project <br> <strong>Tools : </strong>  Excel <a class="blue" href="project 10.html"> details</a></p>
-		  </div>
-		</div>
-
-		<div class="col-lg-4">
-			<div class="text-container project-item mb-5">
-			  <div class="image-container">
-				<a href="project 11.html">
-				  <img class="img-fluid" src="images/project-11.jpg" alt="alternative">
-				</a>
-			  </div>
-			  <p><strong>Project:</strong> Web Scraping <br> <strong>Tools : </strong>  Python(Pandas, Request, BeautifulSoup)<a class="blue" href="project 11.html"> details</a></p>
-			</div>
-		  </div>
-
-	  </div>
-	</div>
-  </section>
-  
-
-<!-- End     -->
-
-
-
-  
-	<!-- Section -->
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Bhushan Gawali's Portfolio</title>
-		<style>
-			.pdf-container {
-				border: 1px solid #ddd;
-				border-radius: 10px;
-				overflow: hidden;
+		.skill-box {
+			border: 2px solid white;
+			border-radius: 5px;
+			padding: 8px 15px;
+			font-size: 0.9em;
+			color: white;
+			transition: background-color 0.3s, color 0.3s;
+			cursor: pointer;
+		}
+	
+		.skill-box:hover {
+			background-color: #FFD700; /* Light yellow */
+			color: black;
+			font-weight: bold;
+		}
+	
+		/* Media Queries for Mobile Responsiveness */
+		@media (max-width: 768px) {
+			.skills {
+				flex-direction: column;
+				align-items: center;
 			}
-		</style>
-	</head>
-	<body>
 	
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="05">0</strong><span>+</span>
-							<span>Achievements</span>
+			.skill-box {
+				width: 80%;
+				margin: 5px 0; /* Add margin for spacing */
+			}
+	
+			.main-skill {
+				font-size: 1.3em;
+			}
+	
+			.big {
+				font-size: 1.8em; /* Adjust the size for smaller screens */
+			}
+		}
+	</style>
+	
+	
+	
+	<br>
+	
+	
+<!-- Projects -------------------------------------------------------------------------------------- -->
+			
+			<section class="skills-section" id="projects-section">
+				<div class="container">
+					<div class="row justify-content-center pb-5">
+						<div class="col-md-10 heading-section text-center ftco-animate">
+							<p class="light-gray-text">Browse My Recent</p>
+							<h1 class="big big-2">Projects</h1>
+							<h2 class="mb-4">Projects</h2>
+							<p>Explore a selection of my key projects, each demonstrating my expertise in data analysis, visualization, and problem-solving. These projects highlight my ability to transform complex data into actionable insights, providing innovative solutions to real-world challenges.</p>
 						</div>
 					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="10">0</strong><span>+</span>
-							<span>Projects</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="1000">0</strong><span>+</span>
-							<span>Contacts</span>
-						</div>
-					</div>
-				</div>
+			
+					<!-- Initial Projects -->
+					<div class="row project-row mb-5">
 
-				<head>
-					<meta charset="UTF-8">
-					<meta name="viewport" content="width=device-width, initial-scale=1.0">
-					<title>Simple View Counter</title>
-					<style>
-						.counter-wrap {
-							text-align: center;
-							margin-top: 50px;
-						}
-						.block-18 {
-							font-size: 24px;
-							font-weight: bold;
-						}
-						.number {
-							font-size: 48px;
-							color: #FF5733;
-						}
-					</style>
-				</head>
-				<body>
-					<div class="col-md d-flex justify-content-center counter-wrap">
-						<div class="block-18">
-							<div class="text">
-								<strong class="number" id="viewCount">0</strong><span>+</span>
-								<span>Views</span>
+                        <div class="col-lg-4">
+                            <div class="text-container project-item mb-5">
+                                <div class="image-container">
+                                    <a href="https://github.com/Bhushan148/Restaurant-Data-Analysis-Insights">
+                                        <img class="img-fluid" src="images/P15.jpg" alt="IPL Stats Analysis">
+                                    </a>
+                                </div>
+                                                                                          <!-- Project Title with hover effect -->
+                          <h3 class="heading text-center project-title">
+                            <a href="https://github.com/Bhushan148/Restaurant-Data-Analysis-Insights">
+                                Restaurant Data Insights and Analytics
+                            </a>
+                          </h3>
+                          
+                          <!-- Tools Used -->
+                          <p class="tools text-center">Python (Pandas, Matplotlib, Seaborn, NumPy), SQL</p>
+                            
+                            </div>
+                        </div>
+
+						<div class="col-lg-4">
+							<div class="text-container project-item mb-5">
+							  <div class="image-container">
+								<a href="https://github.com/Bhushan148/Olympics-Performance-Analytics/tree/main">
+								  <img class="img-fluid" src="images/project-14.png" alt="Olympics Performance Analytics">
+								</a>
+							  </div>
+							  
+							  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Olympics-Performance-Analytics/tree/main">
+								  Olympics Performance Analytics
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">(Power BI, SQL, Python)</p>
+							  
+							  <!-- View Project Button
+							  <div class="view-project-container">
+								<a href="https://github.com/Bhushan148/Olympics-Performance-Analytics/tree/main" class="view-project-btn">View Project</a>
+							  </div> -->
+							</div>
+						</div>
+						  
+			
+						<div class="col-lg-4">
+							<div class="text-container project-item mb-5">
+								<div class="image-container">
+									<a href="https://github.com/Bhushan148/Bank-Loan-Analysis">
+										<img class="img-fluid" src="images/project-2.png" alt="Bank Loan Analysis Project">
+									</a>
+								</div>
+                                						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Bank-Loan-Analysis">
+                                    Bank Loan Analysis Project
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">(Power BI, SQL)</p>
+							</div>
+						</div>
+			
+						<div class="col-lg-4">
+							<div class="text-container project-item mb-5">
+								<div class="image-container">
+									<a href="https://github.com/Bhushan148/Coffee-Shop-Sales-Analysis">
+										<img class="img-fluid" src="images/project-13.png" alt="Coffee Shop Sales Analysis">
+									</a>
+								</div>
+                                                                						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Coffee-Shop-Sales-Analysis">
+                                    Coffee Shop Sales Analysis
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">(Power BI, SQL, MySQL, Google-Docs, Data Modeling, DAX)</p>
+
+							</div>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="text-container project-item mb-5">
+								<div class="image-container">
+									<a href="https://github.com/Bhushan148/Library-Management-System">
+										<img class="img-fluid" src="images/project-12.jpg" alt="Library Management System">
+									</a>
+								</div>
+                                                                						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Library-Management-System">
+                                    Library Management System
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">SQL (Database MySQL)</p>
+							
+							</div>
+						</div>
+
+                        <div class="col-lg-4">
+                            <div class="text-container project-item mb-5">
+                                <div class="image-container">
+                                    <a href="https://github.com/Bhushan148/IPL-Scorecard-Points-Table-Dashboard">
+                                        <img class="img-fluid" src="images/project-1.png" alt="IPL Scorecard/Points Table Dashboard">
+                                    </a>
+                                </div>
+                                                                                          <!-- Project Title with hover effect -->
+                          <h3 class="heading text-center project-title">
+                            <a href="https://github.com/Bhushan148/IPL-Scorecard-Points-Table-Dashboard">
+                                IPL Scorecard/Points Table Dashboard
+                            </a>
+                          </h3>
+                          
+                          <!-- Tools Used -->
+                          <p class="tools text-center">Power BI, API (Rapid API)</p>
+                                
+                            </div>
+                        </div>
+
+						<!-- Hidden Projects -->
+						<div class="hidden-projects row mb-5" style="display: none;">
+			
+							<div class="col-lg-4">
+								<div class="text-container project-item mb-5">
+									<div class="image-container">
+										<a href="https://github.com/Bhushan148/Data-Entry-Form-Excel">
+											<img class="img-fluid" src="images/project-4.png" alt="Data Entry Form Project">
+										</a>
+									</div>
+                                                                    						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Data-Entry-Form-Excel">
+                                    Data Entry Form Project
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">Microsoft Excel (Power Query, Excel Formulas, Macros, Sheet Protection)</p>
+									
+								</div>
+							</div>
+
+                            <div class="col-lg-4">
+                                <div class="text-container project-item mb-5">
+                                    <div class="image-container">
+                                        <a href="https://github.com/Bhushan148/IPL-Stats-Analysis">
+                                            <img class="img-fluid" src="images/project-3.png" alt="IPL Stats Analysis">
+                                        </a>
+                                    </div>
+                                                                                              <!-- Project Title with hover effect -->
+                              <h3 class="heading text-center project-title">
+                                <a href="https://github.com/Bhushan148/IPL-Stats-Analysis">
+                                    IPL Stats Analysis
+                                </a>
+                              </h3>
+                              
+                              <!-- Tools Used -->
+                              <p class="tools text-center">Python (Pandas, Matplotlib, Seaborn, NumPy), Jupyter Notebook</p>
+                                
+                                </div>
+                            </div>
+			
+							<div class="col-lg-4">
+								<div class="text-container project-item mb-5">
+									<div class="image-container">
+										<a href="https://github.com/Bhushan148/Northwind-Sales-Analysis">
+											<img class="img-fluid" src="images/project-5.png" alt="Northwind Sales Analysis">
+										</a>
+									</div>
+                                                                    						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Northwind-Sales-Analysis">
+                                    Northwind Sales Analysis
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">MySQL, Python (Pandas, Matplotlib, Seaborn, MySQL connector)</p>
+									
+								</div>
+							</div>
+			
+							<div class="col-lg-4">
+								<div class="text-container project-item mb-5">
+									<div class="image-container">
+										<a href="https://github.com/Bhushan148/Smartphone-Market-Insights-Analysis-Project">
+											<img class="img-fluid" src="images/project-6.png" alt="Smartphone Market Insights Analysis">
+										</a>
+									</div>
+                                                                    						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Smartphone-Market-Insights-Analysis-Project">
+                                    Smartphone Market Insights Analysis
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">MySQL, Python (Pandas, Matplotlib, Seaborn, MySQL connector)</p>
+									
+								</div>
+							</div>
+			
+							<div class="col-lg-4">
+								<div class="text-container project-item mb-5">
+									<div class="image-container">
+										<a href="https://github.com/Bhushan148/Retail-Sale-Dashboard-Project">
+											<img class="img-fluid" src="images/project-7.png" alt="Retail Sale Dashboard">
+										</a>
+									</div>
+                                                                    						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Retail-Sale-Dashboard-Project">
+                                    Retail Sale Dashboard 
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">(MySQL, Power BI, Power Query)</p>
+									
+								</div>
+							</div>
+			
+							<div class="col-lg-4">
+								<div class="text-container project-item mb-5">
+									<div class="image-container">
+										<a href="https://github.com/Bhushan148/Sales-Dashboard-Excel">
+											<img class="img-fluid" src="images/project-8.png" alt="Sales Dashboard">
+										</a>
+									</div>
+                                                                    						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Sales-Dashboard-Excel">
+                                    Sales Dashboard
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">(Excel, PowerPoint)</p>
+								
+								</div>
+							</div>
+			
+							<div class="col-lg-4">
+								<div class="text-container project-item mb-5">
+									<div class="image-container">
+										<a href="https://github.com/Bhushan148/Bank-Loan-Report-Dashboard-Excel">
+											<img class="img-fluid" src="images/project-9.png" alt="Bank Loan Report Dashboard">
+										</a>
+									</div>
+                                                                    						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Bank-Loan-Report-Dashboard-Excel">
+                                    Bank Loan Report Dashboard
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">(Excel, SQL)</p>
+									
+								</div>
+							</div>
+			
+							<div class="col-lg-4">
+								<div class="text-container project-item mb-5">
+									<div class="image-container">
+										<a href="https://github.com/Bhushan148/Forecasting-in-Excel">
+											<img class="img-fluid" src="images/project-10.png" alt="YouTube Views Forecasting Project">
+										</a>
+									</div>
+                                                                    						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Forecasting-in-Excel">
+                                    YouTube Views Forecasting Project
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">(Excel)</p>
+									
+								</div>
+							</div>
+			
+							<div class="col-lg-4">
+								<div class="text-container project-item mb-5">
+									<div class="image-container">
+										<a href="https://github.com/Bhushan148/Web-scraping">
+											<img class="img-fluid" src="images/project-11.jpg" alt="Web Scraping">
+										</a>
+									</div>
+                                                                    						  <!-- Project Title with hover effect -->
+							  <h3 class="heading text-center project-title">
+								<a href="https://github.com/Bhushan148/Web-scraping">
+                                    Web Scraping
+								</a>
+							  </h3>
+							  
+							  <!-- Tools Used -->
+							  <p class="tools text-center">Python (Pandas, Request, BeautifulSoup)</p>
+									
+								</div>
 							</div>
 						</div>
 					</div>
-				
-					<script>
-						// Function to update and fetch view count
-						function updateViewCount() {
-							const pageName = 'your_page_identifier'; // Unique identifier for each page
-							let viewCount = localStorage.getItem(pageName);
-				
-							if (viewCount === null) {
-								viewCount = 1; // First visit
-							} else {
-								viewCount = parseInt(viewCount) + 1; // Increment the count
-							}
-				
-							// Save the updated count to localStorage
-							localStorage.setItem(pageName, viewCount);
-				
-							// Display the count
-							document.getElementById('viewCount').innerText = viewCount;
-						}
-				
-						// Update the view count when the page loads
-						window.onload = updateViewCount;
-					</script>
-
-	
-	</body>
-          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I specialize in SQL, Python, Excel, and Power BI, with a focus on leveraging Python libraries and problem-solving skills. I enjoy tackling business challenges and revealing insightful data narratives. Explore my projects on GitHub for more details. </h4>
-						<br>
-						<p><a href="https://github.com/Bhushan148?tab=repositories" class="btn btn-primary py-3 px-5">GitHub</a></p>
+			
+					<!-- More Projects Button -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<button id="more-projects-btn" class="btn btn-primary">Show More Projects</button>
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
+			</section>
+			
+			<script>
+				document.getElementById('more-projects-btn').addEventListener('click', function() {
+					const hiddenProjects = document.querySelector('.hidden-projects');
+					hiddenProjects.style.display = hiddenProjects.style.display === 'none' ? 'flex' : 'none';
+					this.innerText = hiddenProjects.style.display === 'flex' ? 'Show Less Projects' : 'Show More Projects';
+				});
+			</script>
+			<script>
+				function toggleProjects() {
+					const hiddenProjects = document.querySelector('.hidden-projects');
+					const button = document.querySelector('button');
+					if (hiddenProjects.style.display === "none" || hiddenProjects.style.display === "") {
+						hiddenProjects.style.display = "flex";
+						button.textContent = "Show Less Projects";
+					} else {
+						hiddenProjects.style.display = "none";
+						button.textContent = "Show More Projects";
+					}
+				}
+				
+				</script>
+	
+
+	<br><br>
+<!-- End     -->
+
+<section class="skills-section" id="certification-section">
+    <div class="container">
+		<div class="row justify-content-center pb-5">
+			<div class="col-md-10 heading-section text-center ftco-animate">
+				<p class="light-gray-text">My</p>
+				<h1 class="big big-2">Awards & Certificates</h1>
+				<h2 class="mb-4">Awards & Certificates</h2>
+				<p>I have earned several awards and certifications that showcase my expertise in data analysis, programming, and technology. These accomplishments reflect my commitment to continuous learning and staying ahead in the field of data analytics.</p>
+			</div>
 		</div>
-	</section>
 
+        <div class="row project-row mb-5">
+            <!-- First six certificates displayed -->
+            <div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/4edee2ad-d51f-480c-8024-82ec648cdb8d#gs.holbgw#acc.94mLuw0C">
+                            <img class="img-fluid" src="Certificates/Business Intelligence Analyst_page-0001.jpg" alt="Power BI Certified">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/4edee2ad-d51f-480c-8024-82ec648cdb8d#gs.holbgw#acc.94mLuw0C" style="color: white; text-decoration: none;">
+						  Business Intelligence Analyst
+						</a>
+					</h3>
+				</div>
+            </div>
 
+            <div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/71fdf42d-e7fa-4fa3-bf2b-6e549c23580a#gs.homdg4#acc.30mwBoyU">
+                            <img class="img-fluid" src="Certificates/Python for Data Analytics_page-0001.jpg" alt="SQL Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/71fdf42d-e7fa-4fa3-bf2b-6e549c23580a#gs.homdg4#acc.30mwBoyU" style="color: white; text-decoration: none;">
+							Python for Data Analytics
+						</a>
+					</h3>
+                </div>
+            </div>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Here are the details to get in touch with me :</p>
-          </div>
+            <div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/3b23cb1a-803d-4683-aa45-1f154527a9e0#acc.QbrcvBi5">
+                            <img class="img-fluid" src="Certificates/Data Visualization Expert_page-0001.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/3b23cb1a-803d-4683-aa45-1f154527a9e0#acc.QbrcvBi5" style="color: white; text-decoration: none;">
+							Data Visualization Expert
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/8ec9bd75-7937-46c1-908a-e34bcecf4558#gs.hom8bc#acc.GmqKjc0o">
+                            <img class="img-fluid" src="Certificates/Python for Data Science_page-0001.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/8ec9bd75-7937-46c1-908a-e34bcecf4558#gs.hom8bc#acc.GmqKjc0o" style="color: white; text-decoration: none;">
+							Python for Data Science
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://drive.google.com/file/d/1Sb4j6sBV5hkniYuIeE6yLZRZhpbkP4_t/view?usp=sharing">
+                            <img class="img-fluid" src="Certificates/Digikull.png" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://drive.google.com/file/d/1Sb4j6sBV5hkniYuIeE6yLZRZhpbkP4_t/view?usp=sharing" style="color: white; text-decoration: none;">
+							Data Analytics Course Completion Certificate
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://coursera.org/share/78129ef1d61b6c0907639a873992242b">
+                            <img class="img-fluid" src="Certificates/IBM Data Analyst Coursera LKDMPM2N2UBR.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://coursera.org/share/78129ef1d61b6c0907639a873992242b" style="color: white; text-decoration: none;">
+							IBM Data Analyst Professional Certificate
+						</a>
+					</h3>
+                </div>
+            </div>
         </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-				<p><a href="https://maps.app.goo.gl/TDmYkGakXReXgURE9">Nashik, Maharashtra</a></p>
-	          </div>
-          </div>
 
-		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-			<div class="align-self-stretch box p-4 text-center">
-			  <div class="icon d-flex align-items-center justify-content-center">
-				<span class="icon-phone2"></span>
-			  </div>
-			  <h3 class="mb-4">Contact Number</h3>
-			  <p><a href="tel:7743927365">+91 7743927365</a></p>
-			</div>
-		  </div>
+        <div class="row hidden-certifications mb-5" style="display: none;">
+            <!-- Additional hidden certificates -->
+            <div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://www.hackerrank.com/certificates/732499feef79">
+                            <img class="img-fluid" src="Certificates/SQL Cert Hach 1.png" alt="Power BI Certified">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://www.hackerrank.com/certificates/732499feef79" style="color: white; text-decoration: none;">
+							SQL (Basic) Certificate
+						</a>
+					</h3>
+                </div>
+            </div>
 
-		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-			<div class="align-self-stretch box p-4 text-center">
-			  <div class="icon d-flex align-items-center justify-content-center">
-				<span class="icon-web"></span>
-			  </div>
-			  <h3 class="mb-4">Email Address</h3>
-			  <p><a href="mailto:bhushanjg14@gmail.com">bhushanjg14@gmail.com</a></p>
-			</div>
-		  </div>
-		  
-		  
+            <div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://drive.google.com/file/d/1TXyiLCE1rKOLRJtzteYnigA72Z_JqTJ7/view?usp=sharing">
+                            <img class="img-fluid" src="Certificates/Mentorness.jpg" alt="SQL Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://drive.google.com/file/d/1TXyiLCE1rKOLRJtzteYnigA72Z_JqTJ7/view?usp=sharing" style="color: white; text-decoration: none;">
+							Mentorness Internship Completion Certificate
+						</a>
+					</h3>
+                </div>
+            </div>
 
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-whatsapp"></span>
-          		</div>
-          		<h3 class="mb-4">WhatsApp</h3>
-	            <p><a href="http://Wa.me/+917743927365">Link</a></p>
-	          </div>
-          </div>
+            <div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://www.hackerrank.com/certificates/16e9b56f1f36">
+                            <img class="img-fluid" src="Certificates/SQL Cert Hach 2.png" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://www.hackerrank.com/certificates/16e9b56f1f36" style="color: white; text-decoration: none;">
+							SQL (Intermediate) Certificate
+						</a>
+					</h3>
+                </div>
+            </div>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/qF7YScvNMQSEgTpc9" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://github.com/Bhushan148"><span class="icon-github"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/bhushan-gawali-97b645233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://x.com/Bhushan58619812?t=ypTn9S1wC7tqCiEE087AZg&s=08"><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.facebook.com/bhushan.gawali.568"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
-					  <li class="ftco-animate"><a href="tel:7743927365"><span class="icon-phone"></span></a></li>
-					  <li class="ftco-animate"><a href="http://Wa.me/+917743927365"><span class="icon-whatsapp"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
- 
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/2811eec7-efd4-4678-89eb-7d9440085b0f#gs.hoocqy#acc.OqLeb9GK">
+                            <img class="img-fluid" src="Certificates/Statistics for Data Analysis.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/2811eec7-efd4-4678-89eb-7d9440085b0f#gs.hoocqy#acc.OqLeb9GK" style="color: white; text-decoration: none;">
+							Statistics for Data Analysis
+						</a>
+					</h3>
+                </div>
+            </div>
 
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</b><b>Thank you !.. </b>   for taking the time to visit my profile and review my work. I hope my portfolio provided you with valuable insights into my skills and expertise. </a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
-	  
-	
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/ddcad13e-00e9-4ac0-839b-2ccf64fccfb8#gs.hoofyr#acc.r74WCfaT">
+                            <img class="img-fluid" src="Certificates/MySQL Specialist.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/ddcad13e-00e9-4ac0-839b-2ccf64fccfb8#gs.hoofyr#acc.r74WCfaT" style="color: white; text-decoration: none;">
+							MySQL Specialist
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/732420b9-1b1c-473c-9d21-fd1c4856d3fa#gs.hoohne#acc.93xoI5Tz">
+                            <img class="img-fluid" src="Certificates/Excel Specialist.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/732420b9-1b1c-473c-9d21-fd1c4856d3fa#gs.hoohne#acc.93xoI5Tz" style="color: white; text-decoration: none;">
+							Excel Specialist
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_dZ9YSq422ck2iyWXP_1725460481872_completion_certificate.pdf">
+                            <img class="img-fluid" src="Certificates/PWC.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_dZ9YSq422ck2iyWXP_1725460481872_completion_certificate.pdf" style="color: white; text-decoration: none;">
+							PwC Switzerland Power BI Completion Certificate
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata%20Group_dZ9YSq422ck2iyWXP_1725469911021_completion_certificate.pdf">
+                            <img class="img-fluid" src="Certificates/Tata.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata%20Group_dZ9YSq422ck2iyWXP_1725469911021_completion_certificate.pdf" style="color: white; text-decoration: none;">
+							Tata Group Data Visualisation
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_dZ9YSq422ck2iyWXP_1725458714085_completion_certificate.pdf">
+                            <img class="img-fluid" src="Certificates/Accenture.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_dZ9YSq422ck2iyWXP_1725458714085_completion_certificate.pdf" style="color: white; text-decoration: none;">
+							Accenture North America Data Analytics and Visualization Completion Certificate
+						</a>
+					</h3>
+                </div>
+            </div>
+
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://coursera.org/share/1b6682a4a69e5c3951486511461104b9">
+                            <img class="img-fluid" src="Certificates/Data Modeling in Power BI.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://coursera.org/share/1b6682a4a69e5c3951486511461104b9" style="color: white; text-decoration: none;">
+							Data Modeling in Power BI
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://coursera.org/share/d17e1eaebef200064c79c58ad0e88255">
+                            <img class="img-fluid" src="Certificates/Extract, Transform and Load Data in Power BI.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://coursera.org/share/d17e1eaebef200064c79c58ad0e88255" style="color: white; text-decoration: none;">
+						  Extract, Transform and Load Data in Power BI
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://coursera.org/share/561584578a06ebd8dd219b59fb8fddf7">
+                            <img class="img-fluid" src="Certificates/Preparing Data for Analysis with Microsoft Excel.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://coursera.org/share/561584578a06ebd8dd219b59fb8fddf7" style="color: white; text-decoration: none;">
+						Preparing Data for Analysis with Microsoft Excel
+						</a>
+					</h3>
+                </div>
+            </div>
+
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/53a6f08b-b6b6-4e7b-8074-2fbe6e5c34ff#gs.hooj5f#acc.sdVvLBGe">
+                            <img class="img-fluid" src="Certificates/Power BI Desktop.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/53a6f08b-b6b6-4e7b-8074-2fbe6e5c34ff#gs.hooj5f#acc.sdVvLBGe" style="color: white; text-decoration: none;">
+							Power BI Desktop
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/de6cffb0-e2c3-4663-91f1-c9b1acf2dc99#gs.hoollk#acc.fTiQjmDH">
+                            <img class="img-fluid" src="Certificates/Tableau Desktop.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/de6cffb0-e2c3-4663-91f1-c9b1acf2dc99#gs.hoollk#acc.fTiQjmDH" style="color: white; text-decoration: none;">
+							Tableau Desktop
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/bed58ea2-2f1d-40d8-ac0f-32bf83c00664#gs.hoorew#acc.FD7nhPf0">
+                            <img class="img-fluid" src="Certificates/Data Literacy Foundations.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/bed58ea2-2f1d-40d8-ac0f-32bf83c00664#gs.hoorew#acc.FD7nhPf0" style="color: white; text-decoration: none;">
+							Data Literacy Foundation
+						</a>
+					</h3>
+                </div>
+            </div>
+
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/a64080dd-0240-49dd-8f6a-eae77ee4c1c5#gs.hooupz#acc.hJ8XG6OM">
+                            <img class="img-fluid" src="Certificates/Cloud Basics for Data Professionals.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/a64080dd-0240-49dd-8f6a-eae77ee4c1c5#gs.hooupz#acc.hJ8XG6OM" style="color: white; text-decoration: none;">
+							Cloud Basics for Data Professionals
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/4ed88eb6-fa00-453d-a4c1-2e4dfe67d526#gs.hoowr3#acc.ejHbnA9L">
+                            <img class="img-fluid" src="Certificates/Microsoft Copilot for Excel.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/4ed88eb6-fa00-453d-a4c1-2e4dfe67d526#gs.hoowr3#acc.ejHbnA9L" style="color: white; text-decoration: none;">
+							Microsoft Copilot for Excel
+						</a>
+					</h3>
+                </div>
+            </div>
+
+			<div class="col-lg-4">
+                <div class="text-container project-item mb-5">
+                    <div class="image-container">
+                        <a href="https://certificates.mavenanalytics.io/46fc3a90-130a-4834-9475-9044abeec743#gs.hooy6g#acc.3yRpBoat">
+                            <img class="img-fluid" src="Certificates/ChatGPT for Data Analytics.jpg" alt="Data Analytics Certification">
+                        </a>
+                    </div>
+                    <h3 class="heading text-center" style="color: white; font-weight: bold; font-size: 0.8rem;">
+						<a href="https://certificates.mavenanalytics.io/46fc3a90-130a-4834-9475-9044abeec743#gs.hooy6g#acc.3yRpBoat" style="color: white; text-decoration: none;">
+							ChatGPT for Data Analytics
+						</a>
+					</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- More Certifications Button -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button id="more-certifications-btn" class="btn btn-primary">Show More Certifications</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('more-certifications-btn').addEventListener('click', function() {
+        const hiddenCertifications = document.querySelector('.hidden-certifications');
+        hiddenCertifications.style.display = hiddenCertifications.style.display === 'none' ? 'flex' : 'none';
+        this.innerText = hiddenCertifications.style.display === 'flex' ? 'Show Less Certifications' : 'Show More Certifications';
+    });
+</script>
+
+
+<br><br>
+<!-- ==================================== -->
+
+<!-- Contact Section -->
+<section class="skills-section" id="certification-section" >
+    <div class="container">
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <p class="light-gray-text">Get in Touch</p>
+                <h1 class="big big-2">Contact Me</h1>
+                <h2 class="mb-4">Contact Me</h2>
+                <p>Let's create something amazing together. Reach out below!</p>
+            </div>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="contact-cards">
+            <div class="contact-card">
+                <div class="icon"><span class="icon-map-signs"></span></div>
+                <h3>Address</h3>
+                <p><a href="https://maps.app.goo.gl/TDmYkGakXReXgURE9" target="_blank">Nashik, Maharashtra</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="icon"><span class="icon-phone2"></span></div>
+                <h3>Phone</h3>
+                <p><a href="tel:7743927365">+91 77439 27365</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="icon"><span class="icon-envelope"></span></div>
+                <h3>Email</h3>
+                <p><a href="mailto:bhushanjg14@gmail.com">bhushanjg14@gmail.com</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="icon"><span class="icon-whatsapp"></span></div>
+                <h3>WhatsApp</h3>
+                <p><a href="http://wa.me/+917743927365" target="_blank">Chat Now</a></p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="c41d9f43-be39-4be5-a8a6-797640f9045e">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="mobile" placeholder="Mobile Number (Optional)">
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <p>Connect with me on:</p>
+            <a href="https://github.com/Bhushan148" class="social-icon github"><span class="icon-github"></span></a>
+            <a href="https://www.linkedin.com/in/bhushan-gawali-97b645233" target="_blank" class="social-icon linkedin"><span class="icon-linkedin"></span></a>
+            <a href="https://x.com/Bhushan58619812?t=ypTn9S1wC7tqCiEE087AZg&s=08" target="_blank" class="social-icon twitter"><span class="icon-twitter"></span></a>
+            <a href="https://www.facebook.com/bhushan.gawali.568" target="_blank" class="social-icon facebook"><span class="icon-facebook"></span></a>
+            <a href="https://www.instagram.com/rishabhnmishra/" target="_blank" class="social-icon instagram"><span class="icon-instagram"></span></a>
+            <a href="http://wa.me/+917743927365" target="_blank" class="social-icon whatsapp"><span class="icon-whatsapp"></span></a>
+            <a href="mailto:bhushanjg14@gmail.com" target="_blank" class="social-icon envelope"><span class="icon-envelope"></span></a>
+        </div>
+    </div>
+</section>
+
+<style>
+/* General Styling */
+.contact-section {
+    padding: 80px 20px;
+    background: radial-gradient(circle, #111 0%, #000 100%);
+    color: #fff;
+    text-align: center;
+}
+
+/* Heading Style */
+.heading-container {
+    margin-bottom: 40px;
+}
+
+.sub-heading {
+    color: #FFD700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.main-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #f2f2f2;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Contact Cards Style */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, #222, #333);
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5);
+}
+
+.contact-card .icon {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.contact-card h3 {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.contact-card p a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contact Form Style */
+.contact-form-container {
+    margin-top: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.contact-form input, .contact-form textarea {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background: #333;
+    box-shadow: 0 0 8px #FFD700;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #c6c2c2, #8a8787);
+    color: #000000;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold; /* Make text bold */
+    cursor: pointer;
+    transition: background 0.4s, transform 0.3s;
+}
+
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #FFA500, #FFD700);
+    transform: translateY(-2px);
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links p {
+    margin-bottom: 10px;
+    color: #FFD700;
+    font-size: 1.2rem;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    margin: 0 15px;
+    color: #FFD700;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 60px 10px;
+    }
+    
+    .main-heading {
+        font-size: 2.5rem;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .social-links p {
+        font-size: 1rem;
+    }
+
+    .social-icon {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 40px 10px;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+    
+    .intro-text {
+        font-size: 0.9rem;
+    }
+
+    .contact-cards {
+        gap: 15px;
+    }
+
+    .contact-card {
+        padding: 15px;
+    }
+
+    .contact-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-card .icon {
+        font-size: 1.6rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .social-icon {
+        font-size: 1.4rem;
+        margin: 0 10px;
+    }
+}
+
+</style>
+
+<footer class="ftco-footer ftco-section" style="background-color: #000; color: #fff; padding: 20px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    Thank you for visiting my portfolio. This space showcases my skills and experience as a data analyst, 
+                    featuring key projects in SQL, Power BI, Python, and data visualization. I strive to transform data into 
+                    actionable insights and am always eager to explore new challenges.
+                </p>
+                <hr style="border-top: 1px solid #555; width: 50%; margin: 20px auto;">
+                <p style="font-size: 0.9rem; color: #aaa;">
+                    Developed by <strong><a href="https://www.linkedin.com/in/bhushan-gawali-97b645233" style="color: #fff; text-decoration: none;">Bhushan Gawali</a></strong> | &copy; <?php echo date("Y"); ?> All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
 	<!-- <iframe title="IPL Project" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=05809e97-5dea-448f-a768-aa01b80f7fd9&autoAuth=true&ctid=b5e77a2d-6845-4cd5-8cc6-828b3b988bb5" frameborder="0" allowFullScreen="true"></iframe> -->
 
   <!-- loader -->
