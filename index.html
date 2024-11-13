@@ -72,42 +72,6 @@
   align-items: center;
 }
 
-/* LinkedIn button styling */
-.btn-linkedin {
-  background-color: white;
-  color: black;
-  border: 2px solid white;
-  border-radius: 30px;
-  padding: 12px 20px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.btn-linkedin:hover {
-  background-color: rgb(255, 200, 0);
-  color: black;
-  border-color: rgb(255, 200, 0);
-}
-
-/* Resume button styling */
-.btn-resume {
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  border-radius: 30px;
-  padding: 12px 20px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.btn-resume:hover {
-  background-color: rgb(255, 200, 0);
-  color: black;
-  border-color: rgb(255, 200, 0);
-}
-
 /* Icon button styling for Gmail, WhatsApp, and GitHub */
 .btn-icon {
   display: inline-flex;
@@ -483,130 +447,122 @@ body, html {
 </script>
 
 
+<head>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
+  
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-        <div class="container">
-            <!-- Portfolio Brand with Icon -->
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-briefcase"></i> Portfolio
-            </a>
-            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu" id="navbar-toggler-icon"></span> 
-            </button>
     
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-                    <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-                    <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Certification</span></a></li>
-                    <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Projects</span></a></li>
-                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <!-- Portfolio Brand with Icon -->
+        <a class="navbar-brand" href="index.html">
+            <i style="margin-right: 10px;" class="fas fa-briefcase" style="margin-right: 12px;"></i>Portfolio
+        </a>
+          
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <!-- Default icon for the menu button (three lines) -->
+            <i class="fas fa-bars" id="navbar-toggler-icon"></i>
+          </span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+            <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Certification</span></a></li>
+            <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-
+  
     <style>
-        
-/* Navbar Styling */
-#ftco-navbar .navbar-brand {
-    font-family: 'Roboto', sans-serif; /* Use a professional font */
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #f8f8f8; /* Light text color */
-    display: flex;
-    align-items: center;
-}
-
-/* Portfolio Icon Styling */
-#ftco-navbar .navbar-brand i {
-    margin-right: 10px; /* Spacing between icon and text */
-    font-size: 30px; /* Adjust size of portfolio icon */
-    color: #f2c800; /* Yellow color for the icon */
-}
-
-/* Hover Effect on Navbar Brand */
-#ftco-navbar .navbar-brand:hover {
-    color: #FFD700;
-    text-decoration: none; /* Remove underline on hover */
-}
-
-/* Adjust navbar link colors
-#ftco-navbar .navbar-nav .nav-link {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-} */
-
-#ftco-navbar .navbar-nav .nav-link:hover {
-    color: #f2c800; /* Hover color for nav items */
-}
-
-/* Change navbar background on scroll */
-#ftco-navbar {
-    background-color: #333333;
-}
-
+      /* Navbar Styling */
+      #ftco-navbar .navbar-brand {
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #f9c700;
+        display: flex;
+        align-items: center;
+      }
+  
+      /* Portfolio Icon Styling */
+      #ftco-navbar .navbar-brand i {
+        margin-right: 10px;
+        font-size: 26px;
+        color: #ffffff;
+      }
+  
+      /* Hover Effect on Navbar Brand */
+      #ftco-navbar .navbar-brand:hover {
+        color: #FFD700;
+        text-decoration: none;
+      }
+  
+      #ftco-navbar .navbar-nav .nav-link:hover {
+        color: #f2c800;
+      }
+  
+      /* Change navbar background */
+      #ftco-navbar {
+        background-color: #000000;
+      }
+  
+      /* Menu Button Styling */
+      .navbar-toggler {
+        border: none; /* Remove border from button */
+      }
+  
+      .navbar-toggler-icon i {
+        font-size: 24px; /* Set icon size */
+        color: #ffffff; /* Set color to white */
+      }
+  
+      /* Smaller Menu Button for Mobile */
+      @media (max-width: 800px) {
+        .navbar-toggler-icon i {
+          font-size: 24px; /* Smaller size on mobile */
+        }
+      }
     </style>
-
-<!-- Optional: Smooth scrolling effect for anchor links -->
-<script>
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  
+    <!-- JavaScript for Smooth Scrolling and Icon Toggle -->
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetSection = document.querySelector(this.getAttribute('href'));
-
-            // Scroll to the section
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-
-            // Close the mobile menu when a link is clicked (on small screens)
-            if ($(".navbar-collapse").hasClass("show")) {
-                $(".navbar-collapse").collapse('hide');
-            }
+          e.preventDefault();
+          const targetSection = document.querySelector(this.getAttribute('href'));
+  
+          // Scroll to the section
+          targetSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+  
+          // Close the mobile menu when a link is clicked (on small screens)
+          if ($(".navbar-collapse").hasClass("show")) {
+            $(".navbar-collapse").collapse('hide');
+          }
         });
-    });
-
-    // Script to toggle hamburger to cross icon
-    $(document).ready(function() {
+      });
+  
+      // Toggle the menu icon between bars and cross on click
+      $(document).ready(function() {
         $('.navbar-toggler').on('click', function() {
-            $('#navbar-toggler-icon').toggleClass('oi-menu oi-x');
+          $('#navbar-toggler-icon').toggleClass('fa-bars fa-times');
         });
-    });
-</script>
-
-<!-- Optional: Script for handling navigation menu toggle on small screens -->
-<script>
-    // Close the mobile menu after clicking a link on small screens
-    $(document).ready(function() {
-        $('.navbar-nav a').on('click', function() {
-            if ($(".navbar-collapse").hasClass("show")) {
-                $(".navbar-collapse").collapse('hide');
-            }
-        });
-    });
-</script>
-
-
-<!-- Optional: Script for handling navigation menu toggle on small screens -->
-<script>
-    // Close the mobile menu after clicking a link on small screens
-    $(document).ready(function() {
-        $('.navbar-nav a').on('click', function() {
-            if ($(".navbar-collapse").hasClass("show")) {
-                $(".navbar-collapse").collapse('hide');
-            }
-        });
-    });
-</script>
-
-<section id="home-section" class="hero">
+      });
+    </script>
+  </body>
+  
+  <section id="home-section" class="hero">
     <div class="container">
         <div class="row content-wrapper">
             <!-- Left Side: Introductory Text Centered Vertically -->
@@ -616,38 +572,48 @@ body, html {
                 <span id="typing-animation" class="typing-text"></span>
 
                 <script>
-                    // Typing Animation with a 10-second gap and improved design
-                    const typingAnimationElement = document.getElementById('typing-animation');
-                    const typingTexts = ['Data Analyst', 'BI Analyst', 'SQL Developer', 'Power BI Developer'];
+    // Typing Animation with a 10-second gap and a slower typing speed
+    const typingAnimationElement = document.getElementById('typing-animation');
+    const typingTexts = ['Data Analyst', 'BI Analyst', 'SQL Developer', 'Power BI Developer'];
+    
+    let textIndex = 0; // Keep track of which word to type
 
-                    function playTypingAnimation() {
-                        let textIndex = 0;
+    // Function to type the next word
+    function typeText(text, callback) {
+        let i = 0;
+        typingAnimationElement.textContent = ''; // Clear the previous word
 
-                        function typeText(text) {
-                            typingAnimationElement.textContent = '';
-                            let i = 0;
-                            const typingInterval = setInterval(() => {
-                                typingAnimationElement.textContent += text[i];
-                                i++;
-                                if (i === text.length) {
-                                    clearInterval(typingInterval);
-                                    setTimeout(() => {
-                                        typingAnimationElement.textContent = '';
-                                        textIndex = (textIndex + 1) % typingTexts.length;
-                                        typeText(typingTexts[textIndex]);
-                                    }, 10000); // 10 seconds gap before switching text
-                                }
-                            }, 100); // Adjust typing speed
-                        }
-                        typeText(typingTexts[textIndex]);
-                    }
-                    playTypingAnimation();
-                </script>
+        const typingInterval = setInterval(() => {
+            typingAnimationElement.textContent += text[i];
+            i++;
+            if (i === text.length) {
+                clearInterval(typingInterval); // Clear the typing interval when the word is fully typed
+                setTimeout(callback, 10000); // Wait for 10 seconds before typing the next word
+            }
+        }, 150); // Typing speed is 150ms per character
+    }
 
+    // Function to start the typing animation
+    function startTypingAnimation() {
+        // Start typing the first word
+        typeText(typingTexts[textIndex], () => {
+            // After 10 seconds, move to the next word
+            textIndex = (textIndex + 1) % typingTexts.length; // Move to next word, loop back after the last word
+            startTypingAnimation(); // Call the function recursively to continue the animation
+        });
+    }
 
-                <div class="buttons mt-4">
-                    <a href="https://www.linkedin.com/in/bhushangawali148/" class="btn btn-linkedin">LinkedIn</a>
-                    <a href="https://drive.google.com/file/d/17ATzTY4LElw9X_RtAZ002EhXUpJ8Tlua/view" class="btn btn-resume">Resume</a>
+    // Start the animation
+    startTypingAnimation();
+</script>
+
+                
+                
+
+                <!-- Space before buttons added with margin-top -->
+                <div class="buttons mt-4" style="margin-top: 30px;">
+                    <a href="https://www.linkedin.com/in/bhushangawali148/" class="btn-linkedin">LinkedIn</a>
+                    <a href="https://drive.google.com/file/d/17ATzTY4LElw9X_RtAZ002EhXUpJ8Tlua/view" class="btn-resume">Resume</a>
                 </div>
             </div>
 
@@ -668,9 +634,55 @@ body, html {
 
 <!-- CSS Styling -->
 <style>
+@media (max-width: 768px) {
+    /* Spacing before Profile Image on Small Screens */
+    .profile-section .profile-image-container {
+        margin-top: 20px; /* Adds space before the image */
+        text-align: center; /* Centers the image if not already centered */
+    }
+}
+
+/* LinkedIn button styling */
+.btn-linkedin {
+  background-color: #ffc800;
+  color: black;
+  border: 2px solid #ffc800;
+  border-radius: 30px;
+  padding: 10px 26px; /* Reduced padding for narrower width */
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-right: 10px; /* Adds horizontal space between buttons */
+}
+
+.btn-linkedin:hover {
+  background-color: #ffffff;
+  color: black;
+  border-color: rgb(255, 200, 0);
+}
+
+/* Resume button styling */
+.btn-resume {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 26px; /* Reduced padding for narrower width */
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.btn-resume:hover {
+  background-color: rgb(255, 200, 0);
+  color: black;
+  border-color: rgb(255, 200, 0);
+}
+
 /* Section and Container Styling - Targeting Only Home Section */
 #home-section {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -730,7 +742,7 @@ body, html {
     font-size: 24px;
     font-style: italic;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 20px; /* Added space between typing text and buttons */
     transition: all 1s ease;
 }
 
@@ -784,7 +796,7 @@ body, html {
 /* Social Icons Styling - Dark Background with White Icons */
 #home-section .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -830,13 +842,19 @@ body, html {
         padding: 12px;
     }
 
-    /* Ensures everything is aligned properly in small screens */
-    #home-section .container {
-        justify-content: center; /* Center the content */
+    /* Section and Container Styling - Targeting Only Home Section */
+    #home-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000; /* Dark background */
+        color: #f0f0f0;
     }
 }
 
 </style>
+<br><br>
 
 
 <section class="skills-section" id="about-section">
@@ -845,7 +863,7 @@ body, html {
             <div class="col-md-10 heading-section text-center ftco-animate">
                 <p class="light-gray-text">Get To Know More</p>
                 <h1 class="big big-2">About Me</h1>
-                <h2 class="mb-4">Who Am I?</h2>
+                <h2 class="mb-4">About Me</h2>
             </div>
         </div>
 
@@ -1281,81 +1299,105 @@ body, html {
 	
 	<!-- CSS for styling -->
 	<style>
-		.skills-section {
-			padding: 20px;
-			text-align: center;
-			color: white;
-		}
-	
-		.main-skill {
-			color: #FFC107;
-			font-size: 1.5em;
-			font-weight: bold;
-			margin-bottom: 15px;
-			letter-spacing: 1.2px;
-			text-shadow: 1px 1px 5px rgba(255, 193, 7, 0.6);
-		}
-	
-		.main-skill::after {
-			content: '';
-			display: block;
-			width: 40px;
-			height: 4px;
-			background-color: #FFC107;
-			margin: 10px auto 0;
-			border-radius: 2px;
-		}
-	
-		.skill-category {
-			margin-bottom: 30px;
-		}
-	
-		.skills {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 8px;
-			justify-content: center;
-			padding: 10px;
-		}
-	
-		.skill-box {
-			border: 2px solid white;
-			border-radius: 5px;
-			padding: 8px 15px;
-			font-size: 0.9em;
-			color: white;
-			transition: background-color 0.3s, color 0.3s;
-			cursor: pointer;
-		}
-	
-		.skill-box:hover {
-			background-color: #FFD700; /* Light yellow */
-			color: black;
-			font-weight: bold;
-		}
-	
-		/* Media Queries for Mobile Responsiveness */
-		@media (max-width: 768px) {
-			.skills {
-				flex-direction: column;
-				align-items: center;
-			}
-	
-			.skill-box {
-				width: 80%;
-				margin: 5px 0; /* Add margin for spacing */
-			}
-	
-			.main-skill {
-				font-size: 1.3em;
-			}
-	
-			.big {
-				font-size: 1.8em; /* Adjust the size for smaller screens */
-			}
-		}
-	</style>
-	
+        .skills-section {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+    
+        .main-skill {
+            color: #FFC107;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1.2px;
+            text-shadow: 1px 1px 5px rgba(255, 193, 7, 0.6);
+        }
+    
+        .main-skill::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 4px;
+            background-color: #FFC107;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+    
+        .skill-category {
+            margin-bottom: 30px;
+        }
+    
+        .skills {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping of skill boxes */
+            gap: 8px;
+            justify-content: center; /* Center-align items */
+            padding: 10px;
+        }
+    
+        .skill-box {
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 8px 15px;
+            font-size: 0.9em;
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap; /* Prevent text from breaking */
+        }
+    
+        .skill-box:hover {
+            background-color: #FFD700; /* Light yellow */
+            color: black;
+            font-weight: bold;
+        }
+    
+        /* Media Queries for Mobile Responsiveness */
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .skills {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            .skill-box {
+        display: flex;               /* Enable flexbox to center the text */
+        align-items: center;         /* Vertically center the text */
+        justify-content: center;     /* Horizontally center the text */
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 6px 12px;           /* Reduced padding */
+        font-size: 0.85em;           /* Reduced font size */
+        color: white;
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+        text-align: center;
+        white-space: nowrap;         /* Ensure text doesn't wrap */
+        max-width: auto;            /* Set max-width for the box */
+        width: auto;                 /* Let the width adjust based on content */
+        height: 35px;                /* Set fixed height */
+        line-height: 1.5;            /* Adjust line height for vertical centering */
+    }
+
+    .skill-box:hover {
+        background-color: #FFD700;   /* Light yellow */
+        color: black;
+        font-weight: bold;
+    }
+    
+            .main-skill {
+                font-size: 1.3em;
+            }
+    
+            .big {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+    
 	
 	
 	<br>
@@ -2126,7 +2168,7 @@ body, html {
 <!-- ==================================== -->
 
 <!-- Contact Section -->
-<section class="skills-section" id="certification-section" >
+<section class="skills-section" id="certification-section">
     <div class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-md-10 heading-section text-center ftco-animate">
@@ -2147,7 +2189,7 @@ body, html {
             <div class="contact-card">
                 <div class="icon"><span class="icon-phone2"></span></div>
                 <h3>Phone</h3>
-                <p><a href="tel:7743927365">+91 77439 27365</a></p>
+                <p><a href="tel:7743927365">+91   77439 27365</a></p>
             </div>
             <div class="contact-card">
                 <div class="icon"><span class="icon-envelope"></span></div>
@@ -2160,7 +2202,7 @@ body, html {
                 <p><a href="http://wa.me/+917743927365" target="_blank">Chat Now</a></p>
             </div>
         </div>
-
+<br>
         <!-- Contact Form -->
         <div class="contact-form-container">
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
@@ -2189,6 +2231,16 @@ body, html {
 </section>
 
 <style>
+/* Remove the padding-bottom space from the row */
+.row {
+    padding-bottom: 0; /* Remove padding */
+}
+
+/* Reduce the margin-top for the contact-cards */
+.contact-cards {
+    margin-top: 0px; /* Reduce margin to a smaller value */
+}
+
 /* General Styling */
 .contact-section {
     padding: 80px 20px;
@@ -2260,17 +2312,20 @@ body, html {
 
 /* Contact Form Style */
 .contact-form-container {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact-form input, .contact-form textarea {
@@ -2279,138 +2334,65 @@ body, html {
     border: none;
     padding: 15px;
     border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
     background: #333;
-    box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 10px #FFD700;
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #c6c2c2, #8a8787);
-    color: #000000;
+    background: linear-gradient(135deg, #f39c12, #e74c3c);
+    color: #fff;
     padding: 15px;
     border: none;
     border-radius: 5px;
-    font-size: 1.1rem;
-    font-weight: bold; /* Make text bold */
+    font-size: 1.2rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.4s, transform 0.3s;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
 }
-
 
 .submit-btn:hover {
-    background: linear-gradient(135deg, #FFA500, #FFD700);
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, #ff5733, #f39c12);
+    transform: translateY(-5px);
 }
 
-/* Social Media Links */
+/* Social Links Styling */
 .social-links {
     margin-top: 40px;
 }
 
-.social-links p {
-    margin-bottom: 10px;
-    color: #FFD700;
-    font-size: 1.2rem;
-}
-
-.social-icon {
-    font-size: 1.8rem;
+.social-links .social-icon {
+    display: inline-block;
+    font-size: 2rem;
     margin: 0 15px;
-    color: #FFD700;
-    transition: color 0.3s, transform 0.3s;
+    color: #f2f2f2;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icon:hover {
-    color: #ffffff;
+.social-links .social-icon:hover {
+    color: #FFD700;
     transform: scale(1.2);
 }
 
-/* Responsive Styling */
+/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
-    .contact-section {
-        padding: 60px 10px;
-    }
-    
-    .main-heading {
-        font-size: 2.5rem;
-    }
-    
-    .intro-text {
-        font-size: 1rem;
-    }
-
     .contact-cards {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contact-card h3 {
-        font-size: 1.2rem;
-    }
-    
-    .social-links p {
-        font-size: 1rem;
-    }
-
-    .social-icon {
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-section {
-        padding: 40px 10px;
-    }
-
-    .main-heading {
-        font-size: 2rem;
-    }
-    
-    .intro-text {
-        font-size: 0.9rem;
-    }
-
-    .contact-cards {
-        gap: 15px;
+        display: block;
+        padding: 0;
     }
 
     .contact-card {
-        padding: 15px;
-    }
-
-    .contact-card h3 {
-        font-size: 1.1rem;
-    }
-
-    .contact-card .icon {
-        font-size: 1.6rem;
-    }
-
-    .contact-form {
-        padding: 20px;
-    }
-
-    .contact-form input, .contact-form textarea {
-        font-size: 0.9rem;
-        padding: 12px;
-    }
-
-    .submit-btn {
-        font-size: 1rem;
-        padding: 12px;
-    }
-
-    .social-icon {
-        font-size: 1.4rem;
-        margin: 0 10px;
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
-
 </style>
+
 
 <footer class="ftco-footer ftco-section" style="background-color: #000; color: #fff; padding: 20px 0;">
     <div class="container">
