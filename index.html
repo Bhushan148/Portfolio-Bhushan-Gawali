@@ -561,54 +561,47 @@ body, html {
       });
     </script>
   </body>
-  
+
   <section id="home-section" class="hero">
     <div class="container">
         <div class="row content-wrapper">
             <!-- Left Side: Introductory Text Centered Vertically -->
             <div class="col-lg-5 text-section">
-                <span class="greeting">Hello,</span>
-                <h1 class="mt-3">I'm <span>Bhushan Gawali</span></h1>
-                <span id="typing-animation" class="typing-text"></span>
+                <span style="font-weight: bold; font-size: 32px; font-family: 'Arial', sans-serif;">Hello !</span>
+                <h1 class="mb-4 mt-3">I'm <span>Bhushan Gawali</span></h1>
+
+                <!-- Element to contain animated typing -->
+                <span id="typing-animation"></span>
 
                 <script>
-    // Typing Animation with a 10-second gap and a slower typing speed
-    const typingAnimationElement = document.getElementById('typing-animation');
-    const typingTexts = ['Data Analyst', 'BI Analyst', 'SQL Developer', 'Power BI Developer'];
-    
-    let textIndex = 0; // Keep track of which word to type
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
 
-    // Function to type the next word
-    function typeText(text, callback) {
-        let i = 0;
-        typingAnimationElement.textContent = ''; // Clear the previous word
+                    // Create an array of typing text
+                    const typingTexts = [
+                        'Data Analyst    ', 
+                        'BI Analyst    ', 
+                        'SQL Specialist    ', 
+                        'Power BI Developer    ', 
 
-        const typingInterval = setInterval(() => {
-            typingAnimationElement.textContent += text[i];
-            i++;
-            if (i === text.length) {
-                clearInterval(typingInterval); // Clear the typing interval when the word is fully typed
-                setTimeout(callback, 10000); // Wait for 10 seconds before typing the next word
-            }
-        }, 150); // Typing speed is 150ms per character
-    }
+                    ];
 
-    // Function to start the typing animation
-    function startTypingAnimation() {
-        // Start typing the first word
-        typeText(typingTexts[textIndex], () => {
-            // After 10 seconds, move to the next word
-            textIndex = (textIndex + 1) % typingTexts.length; // Move to next word, loop back after the last word
-            startTypingAnimation(); // Call the function recursively to continue the animation
-        });
-    }
+                    // Function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                        for (let i = 0; i < text.length; i++) {
+                            setTimeout(() => {
+                                typingAnimationElement.textContent += text[i];
+                            }, i * 200); // Slower typing animation
+                        }
+                        setTimeout(() => {
+                            typingAnimationElement.textContent = '';
+                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                        }, text.length * 300);
+                    }
 
-    // Start the animation
-    startTypingAnimation();
-</script>
-
-                
-                
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+                </script>
 
                 <!-- Space before buttons added with margin-top -->
                 <div class="buttons mt-4" style="margin-top: 30px;">
@@ -644,40 +637,40 @@ body, html {
 
 /* LinkedIn button styling */
 .btn-linkedin {
-  background-color: #ffc800;
-  color: black;
-  border: 2px solid #ffc800;
-  border-radius: 30px;
-  padding: 10px 26px; /* Reduced padding for narrower width */
-  font-weight: bold;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  margin-right: 10px; /* Adds horizontal space between buttons */
+    background-color: #ffc800;
+    color: black;
+    border: 2px solid #ffc800;
+    border-radius: 30px;
+    padding: 10px 26px; /* Reduced padding for narrower width */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-right: 10px; /* Adds horizontal space between buttons */
 }
 
 .btn-linkedin:hover {
-  background-color: #ffffff;
-  color: black;
-  border-color: rgb(255, 200, 0);
+    background-color: #ffffff;
+    color: black;
+    border-color: rgb(255, 200, 0);
 }
 
 /* Resume button styling */
 .btn-resume {
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  border-radius: 30px;
-  padding: 10px 26px; /* Reduced padding for narrower width */
-  font-weight: bold;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  margin-left: 16px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 26px; /* Reduced padding for narrower width */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-left: 16px;
 }
 
 .btn-resume:hover {
-  background-color: rgb(255, 200, 0);
-  color: black;
-  border-color: rgb(255, 200, 0);
+    background-color: rgb(255, 200, 0);
+    color: black;
+    border-color: rgb(255, 200, 0);
 }
 
 /* Section and Container Styling - Targeting Only Home Section */
@@ -695,18 +688,18 @@ body, html {
 #home-section .container {
     max-width: 1200px;
     display: flex;
-    justify-content: center; /* Ensure the container is centered */
+    justify-content: center;
 }
 
 /* Content Wrapping for Balanced Layout */
 #home-section .content-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center; /* Ensure the content is centered */
+    justify-content: center;
     gap: 60px;
     width: 100%;
     text-align: center;
-    flex-wrap: wrap; /* This will make the layout stack properly on smaller screens */
+    flex-wrap: wrap; /* Makes layout stack properly on smaller screens */
 }
 
 /* Text Section Styling */
@@ -719,15 +712,8 @@ body, html {
 }
 
 /* Greeting and Name Styling */
-#home-section .greeting {
-    color: #ffffff; /* White color */
-    font-weight: bold;
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
 #home-section h1 {
-    color: #ffffff; /* White color */
+    color: #ffffff;
     font-weight: bold;
     font-size: 56px;
     line-height: 1.2;
@@ -735,15 +721,6 @@ body, html {
 
 #home-section h1 span {
     color: #FFD700;
-}
-
-#home-section .typing-text {
-    color: #ffffff; /* White color */
-    font-size: 24px;
-    font-style: italic;
-    display: inline-block;
-    margin-top: 20px; /* Added space between typing text and buttons */
-    transition: all 1s ease;
 }
 
 /* Profile Section Styling */
@@ -754,12 +731,13 @@ body, html {
     max-width: 450px;
 }
 
+/* Increased Profile Circle Size */
 #home-section .profile-image-container {
-    width: 250px;
-    height: 250px;
+    width: 285px; /* Increased width */
+    height: 285px; /* Increased height */
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid #f2c800;
+    border: 4px solid #ffffff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
     transition: transform 0.3s;
@@ -818,10 +796,6 @@ body, html {
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    #home-section {
-        padding: 20px;
-    }
-
     #home-section .content-wrapper {
         flex-direction: column;
         text-align: center;
@@ -833,27 +807,18 @@ body, html {
     }
 
     #home-section .profile-image-container {
-        width: 180px;
-        height: 180px;
+        width: 220px; /* Slightly smaller for mobile */
+        height: 220px;
     }
 
     #home-section .social-icons a {
         font-size: 20px;
         padding: 12px;
     }
-
-    /* Section and Container Styling - Targeting Only Home Section */
-    #home-section {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #000000; /* Dark background */
-        color: #f0f0f0;
-    }
 }
-
 </style>
+
+
 <br><br>
 
 
