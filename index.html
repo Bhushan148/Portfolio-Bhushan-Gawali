@@ -570,8 +570,13 @@ body, html {
                 <span style="font-weight: bold; font-size: 32px; font-family: 'Arial', sans-serif;">Hello !</span>
                 <h1 class="mb-4 mt-3">I'm <span>Bhushan Gawali</span></h1>
 
+                <!-- Element to contain animated typing
+                <span id="typing-animation"></span> -->
+                
                 <!-- Element to contain animated typing -->
-                <span id="typing-animation"></span>
+                <div id="typing-container" style="margin-top: 0px; margin-bottom: 10px;">
+                    <span id="typing-animation"></span>
+                </div>
 
                 <script>
                     // Initialize the typing animation
@@ -604,7 +609,7 @@ body, html {
                 </script>
 
                 <!-- Space before buttons added with margin-top -->
-                <div class="buttons mt-4" style="margin-top: 30px;">
+                <div class="buttons mt-4" style="margin-top: 30px; margin-bottom: 20px;">
                     <a href="https://www.linkedin.com/in/bhushangawali148/" class="btn-linkedin">LinkedIn</a>
                     <a href="https://drive.google.com/file/d/17ATzTY4LElw9X_RtAZ002EhXUpJ8Tlua/view" class="btn-resume">Resume</a>
                 </div>
@@ -612,7 +617,7 @@ body, html {
 
             <!-- Right Side: Profile Image and Icons Centered -->
             <div class="col-lg-5 profile-section">
-                <div class="profile-image-container">
+                <div class="profile-image-container" style="margin-top: 0px; margin-bottom: 20px;">
                     <img src="images/Logo 1.jpg" alt="Profile Picture" class="profile-image">
                 </div>
                 <div class="social-icons mt-3">
@@ -637,7 +642,7 @@ body, html {
 @media (max-width: 768px) {
     /* Spacing before Profile Image on Small Screens */
     .profile-section .profile-image-container {
-        margin-top: 20px; /* Adds space before the image */
+        margin-top: 50px; /* Adds space before the image */
         text-align: center; /* Centers the image if not already centered */
     }
 }
@@ -658,7 +663,7 @@ body, html {
 .btn-linkedin:hover {
     background-color: #ffffff;
     color: black;
-    border-color: rgb(255, 200, 0);
+    border-color: rgb(255, 255, 255);
 }
 
 /* Resume button styling */
@@ -803,6 +808,11 @@ body, html {
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
+     /* Add margin-top for space before profile image on mobile screens */
+     #home-section .profile-image-container {
+        margin-top: 50px; /* Adjust space as needed */
+    }
+
     #home-section .content-wrapper {
         flex-direction: column;
         text-align: center;
@@ -822,6 +832,18 @@ body, html {
         font-size: 20px;
         padding: 12px;
     }
+
+    /* Increased Profile Circle Size */
+#home-section .profile-image-container {
+    width: 250px; /* Increased width */
+    height: 260px; /* Increased height */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
 }
 </style>
 
