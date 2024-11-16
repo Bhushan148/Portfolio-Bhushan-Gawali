@@ -565,16 +565,25 @@ body, html {
   <section id="home-section" class="hero">
     <div class="container">
         <div class="row content-wrapper">
-            <!-- Left Side: Introductory Text Centered Vertically -->
+            <!-- Right Side: Profile Image and Icons Centered (Now on the left) -->
+            <div class="col-lg-5 profile-section" style="margin-top: 20px; margin-bottom: 0px;">
+                <div class="profile-image-container" style="margin-top: 0px; margin-bottom: 0px;">
+                    <img src="images/Logo 1.jpg" alt="Profile Picture" class="profile-image">
+                </div>
+                <div class="custom-social-links">
+                    <a href="http://wa.me/+917743927365" target="_blank" class="custom-social-icon custom-whatsapp"><span class="icon-whatsapp"></span></a>
+                    <a href="mailto:bhushanjg14@gmail.com" target="_blank" class="custom-social-icon custom-envelope"><span class="icon-envelope"></span></a>
+                    <a href="https://github.com/Bhushan148" class="custom-social-icon custom-github"><span class="icon-github"></span></a>
+                </div>                             
+            </div>
+
+            <!-- Left Side: Introductory Text Centered Vertically (Now on the right) -->
             <div class="col-lg-5 text-section">
                 <span style="font-weight: bold; font-size: 32px; font-family: 'Arial', sans-serif;">Hello !</span>
                 <h1 class="mb-4 mt-3">I'm <span>Bhushan Gawali</span></h1>
 
-                <!-- Element to contain animated typing
-                <span id="typing-animation"></span> -->
-                
                 <!-- Element to contain animated typing -->
-                <div id="typing-container" style="margin-top: 0px; margin-bottom: 10px;">
+                <div id="typing-container" style="margin-top: -9px; margin-bottom: 10px;">
                     <span id="typing-animation"></span>
                 </div>
 
@@ -588,7 +597,6 @@ body, html {
                         'SQL Specialist      ', 
                         'Data Analyst      ', 
                         'Power BI Developer      ', 
-
                     ];
 
                     // Function to display the typing animation for a given text
@@ -614,77 +622,13 @@ body, html {
                     <a href="https://drive.google.com/file/d/17ATzTY4LElw9X_RtAZ002EhXUpJ8Tlua/view" class="btn-resume">Resume</a>
                 </div>
             </div>
-
-            <!-- Right Side: Profile Image and Icons Centered -->
-            <div class="col-lg-5 profile-section">
-                <div class="profile-image-container" style="margin-top: 0px; margin-bottom: 20px;">
-                    <img src="images/Logo 1.jpg" alt="Profile Picture" class="profile-image">
-                </div>
-                <div class="social-icons mt-3">
-                    <a href="mailto:bhushanjg14@gmail.com" class="btn-icon"><i class="icon-envelope"></i></a>
-                    <a href="http://Wa.me/+917743927365" class="btn-icon"><i class="icon-whatsapp"></i></a>
-                    <a href="https://github.com/Bhushan148" class="btn-icon"><i class="icon-github"></i></a>
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
+
 <!-- CSS Styling -->
 <style>
-    /* Reduce the font size of typing animation */
-    #typing-animation {
-        font-size: 28px; /* Reduced font size */
-        font-family: 'Arial', sans-serif;
-        font-weight: bold;
-    }
-
-@media (max-width: 768px) {
-    /* Spacing before Profile Image on Small Screens */
-    .profile-section .profile-image-container {
-        margin-top: 50px; /* Adds space before the image */
-        text-align: center; /* Centers the image if not already centered */
-    }
-}
-
-/* LinkedIn button styling */
-.btn-linkedin {
-    background-color: #ffc800;
-    color: black;
-    border: 2px solid #ffc800;
-    border-radius: 30px;
-    padding: 10px 26px; /* Reduced padding for narrower width */
-    font-weight: bold;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    margin-right: 10px; /* Adds horizontal space between buttons */
-}
-
-.btn-linkedin:hover {
-    background-color: #ffffff;
-    color: black;
-    border-color: rgb(255, 255, 255);
-}
-
-/* Resume button styling */
-.btn-resume {
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-    border-radius: 30px;
-    padding: 10px 26px; /* Reduced padding for narrower width */
-    font-weight: bold;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    margin-left: 16px;
-}
-
-.btn-resume:hover {
-    background-color: rgb(255, 200, 0);
-    color: black;
-    border-color: rgb(255, 200, 0);
-}
-
 /* Section and Container Styling - Targeting Only Home Section */
 #home-section {
     min-height: 90vh;
@@ -745,12 +689,12 @@ body, html {
 
 /* Increased Profile Circle Size */
 #home-section .profile-image-container {
-    width: 285px; /* Increased width */
-    height: 285px; /* Increased height */
+    width: 275px; /* Increased width */
+    height: 275px; /* Increased height */
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 20px rgba(111, 104, 104, 0.4);
     margin-bottom: 20px;
     transition: transform 0.3s;
 }
@@ -783,68 +727,180 @@ body, html {
     transform: translateY(-3px); /* Elevation effect */
 }
 
-/* Social Icons Styling - Dark Background with White Icons */
-#home-section .social-icons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+/* Custom Social Links Styling */
+#home-section .custom-social-links {
+    margin-top: 26px;
+    text-align: center; /* Center-align the icons */
 }
 
-#home-section .social-icons a {
-    color: #ffffff;
-    font-size: 22px;
-    padding: 15px;
-    background-color: #000000;
-    border-radius: 50%;
-    border: 2px solid #f2c800; /* Border for a defined look */
-    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+/* General Styling for Social Icons */
+#home-section .custom-social-links .custom-social-icon {
+    display: inline-block;
+    font-size: 2.1rem; /* Larger icon size */
+    margin: 0 20px;
+    color: #f2c800;
+    opacity: 0;
+    transform: scale(0.8); /* Initial zoom-out effect */
+    transition: color 0.3s ease, transform 0.5s ease; /* Smooth transition for transform */
+    transition-delay: 0.2s; /* Delay to make animation smooth */
 }
 
-#home-section .social-icons a:hover {
-    color: #121212;
-    background-color: #f2c800;
-    transform: scale(1.1); /* Slightly increase size on hover */
+/* Hover Effect - Zoom in by 30% */
+#home-section .custom-social-links .custom-social-icon:hover {
+    color: #ffffff; /* Golden color on hover */
+    transform: scale(1.3); /* Zoom in by 30% */
+    transition-delay: 0s; /* No delay when hovering */
 }
 
-/* Responsive Design for Smaller Screens */
+/* Animation for Social Icons: Slide-in from different directions */
+.custom-social-links .custom-social-icon:nth-child(1) {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+.custom-social-links .custom-social-icon:nth-child(2) {
+    animation: slideInFromTop 1s ease-out forwards;
+}
+.custom-social-links .custom-social-icon:nth-child(3) {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+/* Slide-in Animations */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-120px); /* Start from left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-120px); /* Start from top */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(120px); /* Start from right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+/* Reduce the font size of typing animation */
+#typing-animation {
+    font-size: 30px; /* Reduced font size */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
-     /* Add margin-top for space before profile image on mobile screens */
-     #home-section .profile-image-container {
-        margin-top: 50px; /* Adjust space as needed */
+    #home-section .profile-image-container {
+        margin-top: 40px; /* Added space before profile image */
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: 4px solid #ffffff;
+        box-shadow: 0 12px 25px rgba(139, 136, 136, 0.488);
+        margin-bottom: 20px;
     }
 
-    #home-section .content-wrapper {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
+    #home-section .profile-image-container:hover {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
 
     #home-section h1 {
-        font-size: 42px;
+        font-size: 45px;
     }
 
-    #home-section .profile-image-container {
-        width: 220px; /* Slightly smaller for mobile */
-        height: 220px;
+    #home-section .text-section {
+        font-size: 80%;
     }
 
-    #home-section .social-icons a {
-        font-size: 20px;
-        padding: 12px;
+    #home-section .profile-section {
+        font-size: 80%;
     }
 
-    /* Increased Profile Circle Size */
-#home-section .profile-image-container {
-    width: 250px; /* Increased width */
-    height: 260px; /* Increased height */
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    margin-bottom: 20px;
-    transition: transform 0.3s;
+    #home-section .buttons .btn {
+        padding: 16px 30px;
+    }
+
+    #home-section .buttons .btn:hover {
+        transform: translateY(-2px);
+    }
+
+    #typing-animation {
+        font-size: 28px;
+    }
+
+    /* Reducing social icon size */
+    #home-section .custom-social-links .custom-social-icon {
+        font-size: 1.8rem; /* Decreased size */
+        margin: 0 12px; /* Decreased spacing */
+    }
+
+    /* Remove extra space before "Hello" text */
+    #home-section .text-section span {
+        margin-bottom: 0px;
+        margin-top: -40px;
+    }
 }
+/* LinkedIn button styling */
+.btn-linkedin {
+    background-color: #ffc800;
+    color: black;
+    border: 2px solid #ffc800;
+    border-radius: 30px;
+    padding: 10px 26px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-right: 10px;
 }
+
+.btn-linkedin:hover {
+    background-color: #ffffff;
+    color: black;
+    border-color: rgb(255, 255, 255);
+}
+
+/* Resume button styling */
+.btn-resume {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 26px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.btn-resume:hover {
+    background-color: rgb(255, 200, 0);
+    color: black;
+    border-color: rgb(255, 200, 0);
+}
+
+/* For smaller screens, reduce the size of buttons */
+@media (max-width: 768px) {
+    .btn-linkedin, .btn-resume {
+        padding: 8px 20px; /* Reduce padding */
+        font-size: 14px; /* Smaller text size */
+    }
+}
+
 </style>
 
 
@@ -2162,6 +2218,7 @@ body, html {
 <!-- ==================================== -->
 
 <!-- Contact Section -->
+<!-- Contact Section -->
 <section class="skills-section" id="certification-section">
     <div class="container">
         <div class="row justify-content-center pb-5">
@@ -2183,7 +2240,7 @@ body, html {
             <div class="contact-card">
                 <div class="icon"><span class="icon-phone2"></span></div>
                 <h3>Phone</h3>
-                <p><a href="tel:7743927365">+91   77439 27365</a></p>
+                <p><a href="tel:7743927365">+91 77439 27365</a></p>
             </div>
             <div class="contact-card">
                 <div class="icon"><span class="icon-envelope"></span></div>
@@ -2196,7 +2253,8 @@ body, html {
                 <p><a href="http://wa.me/+917743927365" target="_blank">Chat Now</a></p>
             </div>
         </div>
-<br>
+        <br>
+
         <!-- Contact Form -->
         <div class="contact-form-container">
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
@@ -2225,16 +2283,6 @@ body, html {
 </section>
 
 <style>
-/* Remove the padding-bottom space from the row */
-.row {
-    padding-bottom: 0; /* Remove padding */
-}
-
-/* Reduce the margin-top for the contact-cards */
-.contact-cards {
-    margin-top: 0px; /* Reduce margin to a smaller value */
-}
-
 /* General Styling */
 .contact-section {
     padding: 80px 20px;
@@ -2370,22 +2418,48 @@ body, html {
 
 .social-links .social-icon:hover {
     color: #FFD700;
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 /* Responsive Design for Small Screens */
 @media (max-width: 768px) {
+    /* Contact Cards */
     .contact-cards {
         display: block;
         padding: 0;
+        margin-top: -25px;
     }
 
     .contact-card {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+        margin-top: -50px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9rem; /* Smaller text size */
+        padding: 10px; /* Smaller padding */
+    }
+
+    .submit-btn {
+        font-size: 1.3rem; /* Smaller button text */
+        padding: 12px; /* Smaller padding */
+    }
+
+    /* Social Links */
+    .social-links .social-icon {
+        font-size: 1.5rem; /* Smaller icon size */
+        margin: 0 10px; /* Reduced margin */
     }
 }
 </style>
+
 
 
 <footer class="ftco-footer ftco-section" style="background-color: #000; color: #fff; padding: 20px 0;">
