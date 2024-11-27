@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-Solving Progress</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ffdd00;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .progress-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Card Styles */
+        .card {
+            background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #fff;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 20px rgba(255, 221, 0, 0.7);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card img:hover {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffdd00;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            margin: 5px 0;
+            color: #d1d1d1;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            background-color: #ffdd00;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .card a:hover {
+            background-color: #e5c100;
+            color: #fff;
+        }
+
+        /* Logo Styling */
+        .card img {
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Chart Section */
+        .chart-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #progressChart {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Social Icons Section */
+        .social-icons {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-content {
+                padding: 15px;
+            }
+
+            .card h2 {
+                font-size: 1.2rem;
+            }
+
+            .card p {
+                font-size: 0.8rem;
+            }
+
+            .card a {
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Problem-Solving Progress</h1>
+        <div class="progress-section">
+            <!-- LeetCode Card -->
+            <div class="card">
+                <img src="images/Logo 1.jpg" alt="LeetCode">
+                <div class="card-content">
+                    <h2>LeetCode</h2>
+                    <p>Problems Solved: 250+</p>
+                    <p>Ranking: Top 10% Globally</p>
+                    <p>Topics: Arrays, DP, Graphs, SQL</p>
+                    <a href="https://leetcode.com/your-profile" target="_blank">View Profile</a>
+                </div>
+            </div>
+
+            <!-- DataLemur Card -->
+            <div class="card">
+                <img src="images/Logo 1.jpg" alt="DataLemur">
+                <div class="card-content">
+                    <h2>DataLemur</h2>
+                    <p>Challenges Completed: 20+</p>
+                    <p>Focus: SQL Queries & Advanced Concepts</p>
+                    <a href="https://datalemur.com/your-profile" target="_blank">View Profile</a>
+                </div>
+            </div>
+
+            <!-- HackerRank Card -->
+            <div class="card">
+                <img src="images/Logo 1.jpg" alt="HackerRank">
+                <div class="card-content">
+                    <h2>HackerRank</h2>
+                    <p>Certifications: SQL (Intermediate), Python</p>
+                    <p>5-Star Achiever in Python</p>
+                    <a href="https://hackerrank.com/your-profile" target="_blank">View Profile</a>
+                </div>
+            </div>
+
+            <!-- StartScratch Card -->
+            <div class="card">
+                <img src="images/Logo 1.jpg" alt="StartScratch">
+                <div class="card-content">
+                    <h2>StartScratch</h2>
+                    <p>Projects: 3 Real-World Solutions</p>
+                    <p>Focus: Algorithms & Data Structures</p>
+                    <a href="https://startscratch.com/your-profile" target="_blank">View Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="chart-container">
+            <h2 style="color: #ffdd00;">Progress Overview</h2>
+            <canvas id="progressChart"></canvas>
+        </div>
+
+        <!-- Social Icons Section -->
+        <div class="social-icons">
+            <a href="https://github.com/your-profile" target="_blank">
+                <img src="images/github.gif" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                <img src="images/linkedin.gif" alt="LinkedIn">
+            </a>
+            <a href="https://twitter.com/your-profile" target="_blank">
+                <img src="images/twitter.gif" alt="Twitter">
+            </a>
+            <!-- Add more social icons as needed -->
+        </div>
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('progressChart').getContext('2d');
+        const progressChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['LeetCode', 'DataLemur', 'HackerRank', 'StartScratch'],
+                datasets: [{
+                    label: 'Challenges Solved',
+                    data: [250, 20, 30, 3],
+                    backgroundColor: [
+                        '#FFD700',
+                        '#FF5733',
+                        '#33FF57',
+                        '#3357FF'
+                    ],
+                    borderColor: [
+                        '#C70039',
+                        '#AF7AC5',
+                        '#1D8348',
+                        '#1F618D'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
